@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    background:
+      radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%),
+      url("../../public/header.png") center/cover no-repeat;
+    color: white;
+    padding-top: 5%; /* Adjust padding for smaller screens */
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh; /* Adjust height for smaller screens */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin: 10%; /* Adjust margin for smaller screens */
+    height: 60vh; /* Adjust height for smaller screens */
+}
+
+.vertical-line {
+    border-left: 2px solid #FFFEEE;
+    height: 70vh; /* Adjust height for smaller screens */
+    margin-right: 5%; /* Adjust margin for smaller screens */
+    margin-top: 5%; /* Adjust margin for smaller screens */
+}
+
+.heading-container {
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 10%; /* Adjust padding for smaller screens */
+    padding-top: 5%;
+}
+
+.header-heading {
+    color: #FFFEEE;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Familjen Grotesk";
+    font-size: 5vw; /* Adjust font size for smaller screens */
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    margin: 0;
+}
+
+.subheading {
+    color: #FFFEEE;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Familjen Grotesk";
+    font-size: 2vw; /* Adjust font size for smaller screens */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+}
+
+.description {
+    color: #D9EFDE;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Lato;
+    font-size: 1.5vw; /* Adjust font size for smaller screens */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    margin: 2vw 0; /* Adjust margin for smaller screens */
+}
+
+.register-button {
+    text-decoration: none;
+    display: flex;
+    padding: 1.5vw 3vw; /* Adjust padding for smaller screens */
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vw; /* Adjust border-radius for smaller screens */
+    border: 0.15vw solid #D9EFDE; /* Adjust border width for smaller screens */
+    background: #D9EFDE;
+    color: #000;
+    font-family: "Lato";
+    font-size: 1.7vw; /* Adjust font size for smaller screens */
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.register-button:hover {
+    background: #A8D5B8;
+    border-color: #A8D5B8;
+    color: #fff;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        height: 100vh;
+        padding-top: 10%;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-line {
+        border-left: none;
+        border-bottom: 2px solid #FFFEEE;
+        height: 10vh;
+        margin: 5% 0;
+    }
+
+    .heading-container {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .header-heading {
+        font-size: 8vw;
+    }
+
+    .subheading {
+        font-size: 4vw;
+    }
+
+    .description {
+        font-size: 2vw;
+        margin: 5% 0;
+    }
+
+    .register-button {
+        padding: 3vw 6vw;
+        border-radius: 10vw;
+        font-size: 2.5vw;
+    }
+}
