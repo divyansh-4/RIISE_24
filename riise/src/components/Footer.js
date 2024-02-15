@@ -3,6 +3,9 @@
 import React from 'react';
 import './Footer.css'; // Import the CSS file for the footer styles
 import footer_logo from '../components/footer_logo.svg';
+import iglogo from './ig.jpg';
+import twitlogo from './twott.jpg';
+import fb from './fb.jpg';
 // src/components/Footer.js
 
 const Footer = () => {
@@ -21,10 +24,10 @@ const Footer = () => {
 
           {/* Right side: Social media logos */}
           <div className="right-content">
-            {/* Add your social media logos here */}
-            <img src="/path/to/instagram.svg" alt="Instagram" />
-            <img src="/path/to/twitter.svg" alt="Twitter" />
-            <img src="/path/to/facebook.svg" alt="Facebook" />
+            <a href="https://www.instagram.com/riise_iiitd/"><img src={iglogo} alt="Instagram" className="social-icon" /></a>
+            <a href="https://twitter.com/IIITDelhi"><img src={twitlogo} alt="Twitter" className="social-icon" /></a>
+            <a href="https://www.facebook.com/IIITDelhi/"><img src={fb} alt="Facebook" className="social-icon" /></a>
+  
           </div>
         </div>
 
@@ -32,7 +35,6 @@ const Footer = () => {
         <hr />
 
         {/* Copyright text */}
-        <p className="copyright-text">© 2024 Your Company. All rights reserved.</p>
       </div>
     </div>
   );
