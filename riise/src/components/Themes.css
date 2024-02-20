@@ -1,7 +1,19 @@
-body {
+/* body {
     background-color: #fffeee;
     margin: 0;
     padding: 0;
+} */
+
+.theme-container{
+    margin-top: 5rem;
+}
+
+.theme-container *{
+    text-decoration: none;
+}
+
+.theme-container *:visited{
+    color: black;
 }
 
 .theme-heading,
@@ -20,60 +32,10 @@ body {
 .card-row {
     background-color: #fffeee;
     border: 1px solid #fffeee;
-    overflow-x: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 10px;
 }
 
-.card {
-    margin-right: 10px;
-    width: 350px;
-}
-
-.card-body p {
-    max-height: 6em;
-    overflow-y: auto;
-    margin: 0;
-    padding: 5px;
-}
-
-@media screen and (min-width: 1200px) {
-    .card {
-        width: 400px;
-    }
-
-    .card-body p {
-        max-height: 7em;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .card {
-        width: 450px;
-    }
-
-    .card-body p {
-        max-height: 8em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .card {
-        width: 250px;
-    }
-
-    .card-body p {
-        max-height: 4em;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .card {
-        width: 200px;
-    }
-
-    .card-body p {
-        max-height: 3em;
+@media screen and (max-width: 768px){
+    .section-heading{
+        font-size: 1.5rem;
     }
 }

@@ -1,0 +1,78 @@
+.card {
+    font-family: "Familjen Grotesk";
+}
+
+.card-img-container{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+
+.card-title{
+    /* height: 2.5rem; */
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 500;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.card p{
+    line-height: 1.3rem;
+    font-size: 0.8rem;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 1400px) {
+    .card-img-container{
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card-img-container{
+        height: 13rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card-img-container{
+        height: 11rem;
+    }
+    .card p{
+        font-size: 0.5rem;
+        line-height: 1rem;
+    }
+    .card-title{
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+    .card-img-container{
+        height: 8rem;
+    }
+    .card p{
+        font-size: 0.5rem;
+        line-height: 0.8rem;
+        -webkit-line-clamp: 2;
+    }
+    .card-title{
+        font-size: 0.8rem;
+    }
+}

@@ -9,22 +9,19 @@ import image6 from "./5G-6G.png";
 import image7 from "./Advanced Multicore System.png";
 import Card from "../containers/Card";
 import RowContainer from "../containers/RowContainer";
-import { Link } from "react-router-dom";
 
-const ThemePage = () => {
+const Speakers = () => {
   return (
     <div className="theme-container">
-      <h2 className="theme-heading">THEME</h2>
-      <h1 className="section-heading">BUILD FOR BHARAT</h1>
-      <RowContainer scroll={false} speed={7}>
-        <Link to="/healthcare">
-          <Card
-            title="Design for India"
-            body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
-            image={image1}
-            alt="India"
-          />
-        </Link>
+      <h2 className="theme-heading">EVENTS</h2>
+      <h1 className="section-heading">SPEAKERS</h1>
+      <RowContainer scroll={true} speed={7}>
+        <Card
+          title="Design for India"
+          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
+          image={image1}
+          alt="India"
+        />
         <Card
           title="Robotics and space technology"
           body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
@@ -66,4 +63,4 @@ const ThemePage = () => {
   );
 };
 
-export default ThemePage;
+export default Speakers;

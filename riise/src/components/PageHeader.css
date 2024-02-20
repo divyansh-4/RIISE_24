@@ -1,0 +1,116 @@
+.header-container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header-filter{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.header-body{
+    padding: 300px 600px 300px 400px;
+    text-align: left;
+}
+
+.header-title{
+    font-size: 5rem;
+    color: white;
+}
+
+.header-subtitle{
+    color: white;
+    font-family: "Familjen Grotesk";
+    margin: 1rem 0rem;
+    font-size: 2rem;
+}
+
+.header-description{
+    font-family: "Familjen Grotesk";
+    color: #D9EFDE;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .header-body{
+        padding: 200px 500px 200px 300px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .header-body{
+        padding: 100px 400px 100px 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header-title{
+        font-size: 4rem;
+    }
+    .header-subtitle{
+        margin: 1rem 0rem;
+        font-size: 1.6rem;
+    }
+    
+    .header-description{
+        font-size: 0.8rem;
+    }
+    .header-body{
+        padding: 100px 400px 100px 100px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header-title{
+        font-size: 3.5rem;
+    }
+    .header-subtitle{
+        margin: 1rem 0rem;
+        font-size: 1.5rem;
+    }
+    
+    .header-description{
+        font-size: 0.8rem;
+    }
+    .header-body{
+        padding: 100px 300px 100px 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-title{
+        font-size: 3rem;
+    }
+    .header-subtitle{
+        margin: 1rem 0rem;
+        font-size: 1.3rem;
+    }
+    
+    .header-description{
+        font-size: 0.8rem;
+    }
+    .header-body{
+        padding: 100px 100px 100px 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-title{
+        font-size: 2.5rem;
+    }
+    .header-subtitle{
+        margin: 1rem 0rem;
+        font-size: 1.3rem;
+    }
+    
+    .header-description{
+        font-size: 0.8rem;
+    }
+    .header-body{
+        padding: 50px
+    }
+}
