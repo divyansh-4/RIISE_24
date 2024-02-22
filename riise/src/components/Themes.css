@@ -12,8 +12,12 @@
     text-decoration: none;
 }
 
-.theme-container *:visited{
-    color: black;
+.theme-container a{
+    color: inherit
+}
+
+.theme-container a:visited{
+    color: inherit;
 }
 
 .theme-heading,

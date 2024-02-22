@@ -121,31 +121,31 @@ const RowContainer = ({ children, scroll, speed }) => {
   }, [pos, itemsPos, count, sliding, width]);
 
   return (
-    <div
-      style={!scroll ? { overflowX: "auto" } : null}
-      className="row-container"
-      onMouseOver={() => {
-        setScrollState(false);
-      }}
-      onMouseOut={() => {
-        if (scroll) setScrollState(true);
-      }}
-    >
-      <>
-        {children.map((child, index) => (
-          <div
-            className="row-item-container"
-            style={{
-              flexBasis: `${width}%`,
-              left: `${itemsPos[index]}%`,
-              transition: `${!scroll ? "left 0.5s ease-in-out" : ""}`,
-            }}
-          >
-            {child}
-          </div>
-        ))}
-      </>
-      {/* <div
+    <div className="row-wrapper">
+      <div
+        className={`row-container ${!scroll ? "row-container-scroll" : ""}`}
+        onMouseOver={() => {
+          setScrollState(false);
+        }}
+        onMouseOut={() => {
+          if (scroll) setScrollState(true);
+        }}
+      >
+        <>
+          {children.map((child, index) => (
+            <div
+              className="row-item-container"
+              style={{
+                flexBasis: `${width}%`,
+                left: `${itemsPos[index]}%`,
+                transition: `${!scroll ? "left 0.5s ease-in-out" : ""}`,
+              }}
+            >
+              {child}
+            </div>
+          ))}
+        </>
+        {/* <div
         className="slide-btn-container"
         style={scroll ? { display: "none" } : null}
       >
@@ -156,6 +156,7 @@ const RowContainer = ({ children, scroll, speed }) => {
           <IoIosArrowForward color="black" />
         </div>
       </div> */}
+      </div>
     </div>
   );
 };

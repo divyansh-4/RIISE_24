@@ -1,3 +1,7 @@
+.row-wrapper{
+    padding-bottom: 24px;
+}
+
 .row-container{
     display: flex;
     flex-wrap: nowrap;
@@ -5,12 +9,29 @@
     width: 100%;
     box-sizing: border-box;
     position: relative;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    margin-bottom: 1rem;
 }
 
-.row-container::-webkit-scrollbar{
-    display: none;
+.row-wrapper:hover .row-container-scroll
+{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: auto !important;
+    scrollbar-color: lightgray rgba(0, 0, 0, 0);
+    /* scrollbar-width: thin; */
+}
+
+.row-container-scroll::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+
+.row-container-scroll::-webkit-scrollbar-thumb {
+    background: lightgray;    
+    -webkit-border-radius: 1ex;
+}
+
+.row-container-scroll::-webkit-scrollbar-corner {
+    visibility: hidden;
 }
 
 .row-item-container{

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Themes.css";
+import "./Speakers.css";
 import image1 from "./Design for india.png";
 import image2 from "./Robotics and space technology.png";
 import image3 from "./Bridging Theory and Practice.png";
@@ -15,7 +16,8 @@ const Speakers = () => {
     <div className="theme-container">
       <h2 className="theme-heading">EVENTS</h2>
       <h1 className="section-heading">SPEAKERS</h1>
-      <RowContainer scroll={true} speed={7}>
+      <h1 className="temp-soon">COMING SOON</h1>
+      {/* <RowContainer scroll={true} speed={7}>
         <Card
           title="Design for India"
           body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
@@ -58,7 +60,7 @@ const Speakers = () => {
           image={image7}
           alt="India"
         />
-      </RowContainer>
+      </RowContainer> */}
     </div>
   );
 };
