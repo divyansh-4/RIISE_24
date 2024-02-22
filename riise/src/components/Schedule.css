@@ -66,18 +66,13 @@
 
   .imge {
     margin-bottom: 5vw; /* Default margin for larger screens */
+    width: 500px;
+  }  
+}
+
+@media screen and (max-width: 520px) {
+  .imge {
+    margin-bottom: 15vw; /* Further adjusted margin for even smaller screens */
+    width: 300px;
   }
-  
-  @media screen and (max-width: 768px) {
-    .imge {
-      margin-bottom: 10vw; /* Adjusted margin for smaller screens */
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .imge {
-      margin-bottom: 15vw; /* Further adjusted margin for even smaller screens */
-    }
-  }
-  
 }
