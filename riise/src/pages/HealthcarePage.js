@@ -11,7 +11,7 @@ const HealthcarePage = () => {
       <PageHeader
         title="Healthcare"
         subtitle="Build for India"
-        description="Research Innovation and Incubation Showcase Events (RIISE), the annual flagship event of IIIT Delhi, brings together the brightest minds from academia, industry, and government under a roof, building a platform that transcends boundaries, transforming academic brilliance into tangible impact"
+        description="Research Innovation and Incubation Showcase Events (RIISE), the annual flagship event of IIIT Delhi, brings together the brightest minds from academia, industry, and government under a roof, building a platform that transcends boundaries, transforming academic brilliance into tangible impact to leverage technology and tools to build accessible and affordable healthcare"
         image=" /healthcare.png"
       />
       <Speakers />

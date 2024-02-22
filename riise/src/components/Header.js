@@ -17,7 +17,7 @@ const Header = () => {
                                     minds from <br></br> academia, industry, and government under a roof, building a 
                                     platform that <br></br>  transcends boundaries, transforming academic brilliance into 
                                     tangible impact.</p>
-          <Link style={{ textDecoration: 'none' }} to="/register">
+          <Link style={{ textDecoration: 'none' }} to="/">
           <button className="register-button">Register Here</button>
           </Link>
         </div>

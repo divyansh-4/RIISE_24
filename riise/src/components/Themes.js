@@ -7,6 +7,7 @@ import image4 from "./Computational Gastronomy.png";
 import image5 from "./Sustainable Mobility.png";
 import image6 from "./5G-6G.png";
 import image7 from "./Advanced Multicore System.png";
+import image8 from "./healthcare_card.png"
 import Card from "../containers/Card";
 import RowContainer from "../containers/RowContainer";
 import { Link } from "react-router-dom";
@@ -19,45 +20,45 @@ const ThemePage = () => {
       <RowContainer scroll={false} speed={7}>
         <Link to="/healthcare">
           <Card
-            title="Healthcare"
-            body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
-            image={image1}
+            title={<h2>Healthcare</h2>}
+            body="Leveraging technology and tools to build accessible and affordable healthcare"
+            image={image8}
             alt="India"
           />
         </Link>
         <Card
-          title="Robotics and space technology"
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
+          title={<h2>Robotics and space technology</h2>}
+          body="Automating crucial tasks and unlocking space explorations"
           image={image2}
           alt="India"
         />
         <Card
-          title="Bridging theory and practice"
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
+          title={<h2>Bridging theory and practice</h2>}
+          body="Building and developing a strong foundation for innovation"
           image={image3}
           alt="India"
         />
         <Card
-          title="Computational gastronomy"
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
+          title={<h2>Computational gastronomy</h2>}
+          body="Exploring the intersection of food, technology and culture"
           image={image4}
           alt="India"
         />
         <Card
-          title="Sustainable mobility"
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
+          title={<h2>Sustainable mobility</h2>}
+          body="Building Green, Accesible and Inclusive mobility"
           image={image5}
           alt="India"
         />
         <Card
-          title="5G/6G "
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
+          title={<h2>5G/6G </h2>}
+          body="Powering India's Digital transformation on web connectivity"
           image={image6}
           alt="India"
         />
         <Card
-          title="Advanced multicore systems"
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
+          title={<h2>Advanced multicore systems</h2>}
+          body="Building indigineous high-performance computing platforms"
           image={image7}
           alt="India"
         />

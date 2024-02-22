@@ -15,22 +15,22 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-menu">
-          <Link to="/schedule" className="navbar-button">
+          <Link to="/" className="navbar-button">
             Schedule
           </Link>
-          <Link to="/speakers" className="navbar-button">
+          <Link to="/" className="navbar-button">
             Speakers
           </Link>
-          <Link to="/gallery" className="navbar-button">
+          <Link to="/" className="navbar-button">
             Gallery
           </Link>
-          <Link to="/about-us" className="navbar-button">
+          <Link to="/" className="navbar-button">
             About Us
           </Link>
-          <Link to="/contact-us" className="navbar-button">
+          <Link to="/" className="navbar-button">
             Contact Us
           </Link>
-          <Link to="/register" className="navbar-register-button">
+          <Link to="/" className="navbar-register-button">
             Register
           </Link>
         </div>
