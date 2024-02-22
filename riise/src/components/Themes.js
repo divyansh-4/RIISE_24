@@ -10,7 +10,9 @@ import image7 from "./Advanced Multicore System.png";
 import image8 from "./healthcare_card.png"
 import Card from "../containers/Card";
 import RowContainer from "../containers/RowContainer";
-import { Link } from "react-router-dom";
+import { HashRouter as Router, Link } from "react-router-dom";
+import { HashRouter, Routes, Route } from 'react-router-dom';
+
 
 const ThemePage = () => {
   return (
