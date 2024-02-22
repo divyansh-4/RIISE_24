@@ -4,13 +4,13 @@ const PageHeader = ({ image, title, subtitle, description }) => {
   return (
     <div
       style={{ backgroundImage: `url('${image}')` }}
-      className="header-container"
+      className="page-header-container"
     >
-      <div className="header-filter"></div>
-      <div className="header-body">
-        <div className="header-title">{title}</div>
-        <div className="header-subtitle">{subtitle}</div>
-        <div className="header-description">{description}</div>
+      <div className="page-header-filter"></div>
+      <div className="page-header-body">
+        <div className="page-header-title">{title}</div>
+        <div className="page-header-subtitle">{subtitle}</div>
+        <div className="page-header-description">{description}</div>
       </div>
     </div>
   );

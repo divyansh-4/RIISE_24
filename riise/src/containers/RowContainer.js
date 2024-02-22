@@ -1,19 +1,24 @@
 import "./RowContainer.css";
-import { useState, useEffect, useRef, useCallback } from "react";
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import { useState, useEffect, useCallback, useMemo } from "react";
+// import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 const RowContainer = ({ children, scroll, speed }) => {
   const [count, setCount] = useState(100);
+  const [itemsPos, setItemsPos] = useState(Array(children.length).fill(0));
   const [scrollState, setScrollState] = useState(scroll);
+  const [scrollTimer, setScrollTimer] = useState(null);
+  const [controlTimer, setControlTimer] = useState(true);
+
   const [pos, setPos] = useState(0);
   const [sliding, setSliding] = useState(false);
-  const rowContainerRef = useRef(null);
 
-  const [itemsPos, setItemsPos] = useState(Array(children.length).fill(0));
+  const width = useMemo(() => {
+    return 100 / count;
+  }, [count]);
 
-  useEffect(() => {
-    setScrollState(scroll);
-  }, [scroll]);
+  const scrollMemo = useMemo(() => {
+    return scrollState && itemsPos.length > count;
+  }, [itemsPos.length, count, scrollState]);
 
   useEffect(() => {
     function changeCount(e) {
@@ -29,8 +34,6 @@ const RowContainer = ({ children, scroll, speed }) => {
       } else {
         setCount(2);
       }
-      setItemsPos(Array(itemsPos.length).fill(0));
-      setPos(0);
     }
 
     changeCount();
@@ -38,28 +41,49 @@ const RowContainer = ({ children, scroll, speed }) => {
     return () => {
       window.removeEventListener("resize", changeCount);
     };
-  }, []);
+  }, [itemsPos.length]);
 
   useEffect(() => {
-    if (!scrollState || itemsPos.length <= count) return;
-    const rowItems =
-      rowContainerRef.current.getElementsByClassName("row-item-container");
+    function resizeEvent(e) {
+      window.clearTimeout(scrollTimer);
+      setItemsPos(Array(itemsPos.length).fill(0));
+      if (scrollMemo) {
+        setControlTimer((ct) => !ct);
+      }
+    }
+
+    window.addEventListener("resize", resizeEvent);
+    return () => {
+      window.removeEventListener("resize", resizeEvent);
+    };
+  }, [scrollTimer, controlTimer, itemsPos.length, scrollMemo]);
+
+  useEffect(() => {
+    window.clearTimeout(scrollTimer);
+    if (scrollMemo) {
+      setControlTimer((ct) => !ct);
+    } else {
+    }
+  }, [scrollMemo]);
+
+  useEffect(() => {
+    if (!scrollMemo) return;
     function scrollItems() {
       const pos = [];
-      for (let i = 0; i < rowItems.length; i++) {
-        if (rowItems[i].getBoundingClientRect().right < 0) {
-          pos.push(itemsPos[i] + (100 / count) * itemsPos.length);
+      for (let i = 0; i < itemsPos.length; i++) {
+        if (itemsPos[i] <= (-1 - i) * width) {
+          pos.push(width * (itemsPos.length - 1 - i));
         } else {
           pos.push(itemsPos[i] - speed / 60);
         }
       }
       setItemsPos(pos);
+      setControlTimer(!controlTimer);
     }
 
-    window.requestAnimationFrame(() => {
-      window.setTimeout(scrollItems, 17);
-    });
-  }, [itemsPos, speed, scrollState, count]);
+    const timer = window.setTimeout(scrollItems, 17);
+    setScrollTimer(timer);
+  }, [controlTimer]);
 
   const slideLeft = useCallback(() => {
     if (
@@ -71,7 +95,7 @@ const RowContainer = ({ children, scroll, speed }) => {
 
     const newItemPos = [];
     for (let i = 0; i < itemsPos.length; i++) {
-      newItemPos.push(itemsPos[i] - 100 / count);
+      newItemPos.push(itemsPos[i] - width);
     }
     setItemsPos(newItemPos);
     setPos(pos + 1);
@@ -79,14 +103,14 @@ const RowContainer = ({ children, scroll, speed }) => {
     setTimeout(() => {
       setSliding(false);
     }, 1000);
-  }, [pos, itemsPos, count, sliding]);
+  }, [pos, itemsPos, count, sliding, width]);
 
   const slideRight = useCallback(() => {
     if (itemsPos.length < count || pos === 0 || sliding) return;
 
     const newItemPos = [];
     for (let i = 0; i < itemsPos.length; i++) {
-      newItemPos.push(itemsPos[i] + 100 / count);
+      newItemPos.push(itemsPos[i] + width);
     }
     setItemsPos(newItemPos);
     setPos(pos - 1);
@@ -94,13 +118,12 @@ const RowContainer = ({ children, scroll, speed }) => {
     setTimeout(() => {
       setSliding(false);
     }, 1000);
-  }, [pos, itemsPos, count, sliding]);
+  }, [pos, itemsPos, count, sliding, width]);
 
   return (
     <div
       style={!scroll ? { overflowX: "auto" } : null}
       className="row-container"
-      ref={rowContainerRef}
       onMouseOver={() => {
         setScrollState(false);
       }}
@@ -113,7 +136,7 @@ const RowContainer = ({ children, scroll, speed }) => {
           <div
             className="row-item-container"
             style={{
-              flexBasis: `${100 / count}%`,
+              flexBasis: `${width}%`,
               left: `${itemsPos[index]}%`,
               transition: `${!scroll ? "left 0.5s ease-in-out" : ""}`,
             }}

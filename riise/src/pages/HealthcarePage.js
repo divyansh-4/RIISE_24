@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar";
 import PageHeader from "../components/PageHeader";
 import Speakers from "../components/Speakers";
 import Schedule from "../components/Schedule";
@@ -6,6 +7,7 @@ import Footer from "../components/Footer";
 const HealthcarePage = () => {
   return (
     <div>
+      <Navbar />
       <PageHeader
         title="Healthcare"
         subtitle="Build for India"

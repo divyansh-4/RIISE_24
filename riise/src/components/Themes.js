@@ -19,7 +19,7 @@ const ThemePage = () => {
       <RowContainer scroll={false} speed={7}>
         <Link to="/healthcare">
           <Card
-            title="Design for India"
+            title="Healthcare"
             body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
             image={image1}
             alt="India"
