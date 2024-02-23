@@ -1,0 +1,16 @@
+.healthcare-newbody{
+    background-color: #84BB40;
+    padding-top: 4rem;
+    position: relative;
+    height: 100vh;
+}
+
+.healthcare-newbody-trans{
+    position: absolute;
+    top: 0;
+    border-bottom-left-radius: 8rem;
+    border-bottom-right-radius: 8rem;
+    background-color: white;
+    height: 2rem;
+    width: 100%;
+}

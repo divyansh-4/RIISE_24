@@ -9,6 +9,9 @@
     align-items: center;
     overflow: hidden;
     border-radius: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
