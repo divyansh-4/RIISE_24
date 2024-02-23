@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import Navbar from "../components/Navbar";
 import PageHeader from "../components/PageHeader";
 import Speakers from "../components/Speakers";
@@ -5,9 +6,14 @@ import Schedule from "../components/Schedule";
 import Footer from "../components/Footer";
 
 const HealthcarePage = () => {
+  const footerRef = useRef();
+
+  const scrollToFooter = () => {
+    footerRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div>
-      <Navbar />
+      <Navbar scrollToFooter={scrollToFooter}/>
       <PageHeader
         title="Healthcare"
         subtitle="Build for India"
@@ -16,7 +22,7 @@ const HealthcarePage = () => {
       />
       <Speakers />
       <Schedule />
-      <Footer />
+      <Footer footerRef={footerRef}/>
     </div>
   );
 };
