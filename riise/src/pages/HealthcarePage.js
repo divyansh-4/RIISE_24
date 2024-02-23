@@ -26,7 +26,7 @@ const HealthcarePage = () => {
       <Hackathon
         title="Localize and Extract Cancer Cells from Microscopic Images: A Medical Segmentation Problem"
         message="Prof. Anubha Gupta would like to thank SERB, Department of Science & Technology, Govt. of India for Grant no. SPF/2021/000209. Organizers would also like to thank the Centre of Excellence in Healthcare, IIIT-Delhi for the support to conduct this activity. "
-        registerLink="#"
+        registerLink="https://docs.google.com/forms/d/e/1FAIpQLSd9CcVMj2jj9REtWkVmSXNwv6zVc2sw4DLEZGzZstuJQtEKjw/viewform?usp=sf_link"
         organisers={[
           {
             name: "Dr. Jaspreet Kaur",
@@ -41,7 +41,7 @@ const HealthcarePage = () => {
         ]}
       />
       <div className="healthcare-newbody">
-        <div className="healthcare-newbody-trans"></div>
+        {/* <div className="healthcare-newbody-trans"></div> */}
         <div className="header">
           <h1>Timeline</h1>
         </div>
@@ -73,6 +73,7 @@ const HealthcarePage = () => {
           <p className="paragraph-content">1. The organizers will publish a research journal paper with the top 3 to 5 teams (depending on the quality of the final works).<br></br>
           2. Another round of presentations will be conducted in the hybrid mode on April 20, 2024.</p>
         </div>
+        <br></br>
       </div>
       <Footer footerRef={footerRef} />
     </div>

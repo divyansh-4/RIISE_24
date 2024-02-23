@@ -30,7 +30,7 @@ const Navbar = ({ scrollToFooter }) => {
           <Link to="#" className="navbar-button" onClick={scrollToFooter}>
             Contact Us
           </Link>
-          <Link to="https://docs.google.com/forms/d/e/1FAIpQLScXG8IlfsV-PfFameARvC1MoKqCHjnzhsdYmoVMqzh2yBcp7Q/closedform" className="navbar-register-button">
+          <Link to="https://docs.google.com/forms/d/e/1FAIpQLSd9CcVMj2jj9REtWkVmSXNwv6zVc2sw4DLEZGzZstuJQtEKjw/viewform?usp=sf_link" className="navbar-register-button">
             Register
           </Link>
         </div>
