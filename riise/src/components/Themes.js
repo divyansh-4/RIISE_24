@@ -18,7 +18,7 @@ const ThemePage = () => {
   return (
     <div className="theme-container">
       <h2 className="theme-heading">THEME</h2>
-      <h1 className="section-heading">BUILD FOR BHARAT</h1>
+      <h1 className="section-heading">BUILD FOR INDIA</h1>
       <RowContainer scroll={false} speed={7}>
         <Link to="/healthcare">
           <Card
