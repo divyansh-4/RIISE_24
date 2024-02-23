@@ -30,7 +30,7 @@ const Navbar = () => {
           <Link to="/" className="navbar-button">
             Contact Us
           </Link>
-          <Link to="/" className="navbar-register-button">
+          <Link to="https://docs.google.com/forms/d/e/1FAIpQLScXG8IlfsV-PfFameARvC1MoKqCHjnzhsdYmoVMqzh2yBcp7Q/closedform" className="navbar-register-button">
             Register
           </Link>
         </div>

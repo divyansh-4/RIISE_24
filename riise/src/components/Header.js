@@ -18,7 +18,7 @@ const Header = () => {
                                     platform that <br></br>  transcends boundaries, transforming academic brilliance into 
                                     tangible impact.</p>
           <Link style={{ textDecoration: 'none' }} to="/">
-          <button className="register-button">Register Here</button>
+            <button className="register-button"><a href="https://docs.google.com/forms/d/e/1FAIpQLScXG8IlfsV-PfFameARvC1MoKqCHjnzhsdYmoVMqzh2yBcp7Q/closedform" target="_blank" rel="noopener noreferrer">Register Here</a></button>
           </Link>
         </div>
       </div>
