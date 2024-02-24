@@ -29,7 +29,13 @@ const ThemePage = () => {
           />
         </Link>
         <Card
-          title={<h2>Robotics and space technology</h2>}
+          title={<h2>Design for India</h2>}
+          body="Human Centered solutions for India's unique challenges"
+          image={image1}
+          alt="India"
+        />
+        <Card
+          title={<h2>Robotics and Space Tech</h2>}
           body="Automating crucial tasks and unlocking space explorations"
           image={image2}
           alt="India"
