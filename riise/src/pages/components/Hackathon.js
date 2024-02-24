@@ -1,7 +1,13 @@
 import "./Hackathon.css";
 import { useState, useEffect, useRef } from "react";
 
-const Hackathon = ({ title, organisers, message, registerLink }) => {
+const Hackathon = ({
+  title,
+  organisers,
+  message,
+  registerLink,
+  timelineBlocks,
+}) => {
   const mssgTextRef = useRef(null);
   const [padding, setPadding] = useState(50);
 
@@ -50,9 +56,31 @@ const Hackathon = ({ title, organisers, message, registerLink }) => {
         </div>
       </div>
       <div className="hackathon-register-btn-container">
-        <a href={registerLink} target="_">
+        <a href={registerLink} target="_blank">
           <div className="hackathon-register-btn">Register</div>
         </a>
+      </div>
+
+      <div className="hackathon-newbody">
+        <div className="hackathon-newbody-trans"></div>
+        <div className="hackathon-timeline-header">Timeline</div>
+
+        {timelineBlocks.map(({ heading, timerange, body }) => {
+          return (
+            <div className="hackathon-timeline-block-body-container">
+              <div className="hackathon-divider"></div>
+              <div>
+                <span className="hackathon-timeline-block-header">{`${heading}${
+                  timerange ? ": " : ""
+                }`}</span>
+                <span className="hackathon-timeline-block-timerange">{`${
+                  timerange ? timerange : ""
+                }`}</span>
+              </div>
+              {body}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -1,17 +1,8 @@
 .hackathon-component-container{
     text-align: center;
     font-family: 'DM Serif Display', serif;
-    margin: 15vw 0 7vw 0;
+    padding-top: 15vw;
     font-size: 1rem;
-}
-
-.hackathon-component-container a{
-    text-decoration: none;
-    color: inherit
-}
-
-.hackathon-component-container a:visited{
-    color: inherit;
 }
 
 .hackathon-header-text {
@@ -87,6 +78,15 @@
     margin-top: 1.5rem;
 }
 
+.hackathon-register-btn-container a{
+    text-decoration: none;
+    color: inherit
+}
+
+.hackathon-register-btn-container a:visited{
+    color: inherit;
+}
+
 .hackathon-register-btn{
     background-color: #5BA500;
     border-radius: 2rem;
@@ -94,6 +94,7 @@
     font-family: 'Lato', sans-serif;
     padding: 1rem 4rem;
 }
+
 
 @media screen and (max-width: 1200px) {
     .hackathon-component-container{
@@ -110,5 +111,59 @@
 @media screen and (max-width: 500px) {
     .hackathon-component-container{
         font-size: 0.5rem;
+    }
+}
+
+.hackathon-newbody{
+    background-color: #84BB40;
+    padding-top: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vw;
+}
+
+.hackathon-newbody-trans{
+    position: absolute;
+    top: 0;
+    border-bottom-left-radius: 8rem;
+    border-bottom-right-radius: 8rem;
+    background-color: white;
+    height: 2rem;
+    width: 100%;
+}
+
+.hackathon-timeline-header{
+    color: white;
+    font-size: 3em;
+}
+
+.hackathon-divider{
+    border-bottom: 1px solid black; 
+    margin: 2rem auto;
+}
+
+.hackathon-timeline-block-body-container{
+    width: 60%;
+}
+
+.hackathon-timeline-block-header{
+    color: #036132;
+    font-style: italic;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.hackathon-timeline-block-timerange{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+    .hackathon-timeline-block-body-container{
+        width: 80%;
     }
 }
