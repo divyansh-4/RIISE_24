@@ -2,10 +2,9 @@ import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
 import PageHeader from "../components/PageHeader";
 import Speakers from "../components/Speakers";
-import Schedule from "../components/Schedule";
 import Footer from "../components/Footer";
 import Hackathon from "./components/Hackathon";
-import "./Healthcare.css";
+import "./HealthcarePage.css";
 
 const HealthcarePage = () => {
   const footerRef = useRef();
@@ -39,42 +38,116 @@ const HealthcarePage = () => {
             image: "/profanubha.png",
           },
         ]}
+        timelineBlocks={[
+          {
+            heading: "Phase 1",
+            timerange: "20th Feb, 2024 - March 10, 2024",
+            body: (
+              <div className="healthcare-hackathon-timeline-block-container">
+                <ol>
+                  <li>Register for the Hackathon</li>
+                  <li>
+                    Perform the segmentation and upload results by the team name
+                    at the leaderboard on the{" "}
+                    <a
+                      href="https://segpc-2021.grand-challenge.org/evaluation/final-test-phase/leaderboard/"
+                      target="_blank"
+                    >
+                      test data
+                    </a>{" "}
+                    (https://segpc-2021.grand-challenge.org/evaluation/final-test-phase/leaderboard/)
+                  </li>
+                  <li>
+                    Any team can upload the results at max 5 times. on the
+                    leaderboard. (One can upload the results on the leaderboard
+                    by joining the page{" "}
+                    <a
+                      href="https://segpc-2021.grand-challenge.org/evaluation/challenge/leaderboard/"
+                      target="_blank"
+                    >
+                      here
+                    </a>
+                    -https://segpc-2021.grand-challenge.org/evaluation/challenge/leaderboard/)
+                  </li>
+                  <li>
+                    Upload the paper in the IEEE ISBI conference template
+                    provided as an attachment.
+                  </li>
+                </ol>
+                <div className="healthcare-hackathon-dataset-text">
+                  Link to Dataset{" "}
+                  <a
+                    href="https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images"
+                    target="_blank"
+                  >
+                    here
+                  </a>
+                </div>
+              </div>
+            ),
+          },
+          {
+            heading: "Outcome",
+            body: (
+              <div className="healthcare-hackathon-timeline-block-container">
+                <ol>
+                  <li>
+                    {" "}
+                    The papers will be reviewed and the results will be
+                    announced by March 12, 2024 for poster and paper
+                    presentation at RIISE 2024.
+                  </li>
+                  <li>
+                    There would be cash awards for the top 3 teams (Rs, 15k for
+                    the top team, 10k for the first runner-up, and 5k for the
+                    2nd runner-up).
+                  </li>
+                  <li>Goodies for participating teams by the clubs...???</li>
+                </ol>
+              </div>
+            ),
+          },
+          {
+            heading: "Phase 2",
+            timerange: "10th Feb, 2024",
+            body: (
+              <div className="healthcare-hackathon-timeline-block-container">
+                <ol>
+                  <li>
+                    The improvements will be suggested by the audience and/or
+                    the experts during RIISE. The challenge will continue and
+                    the second phase results and updated papers are required to
+                    be submitted by April 10, 2024.
+                  </li>
+                  <li>
+                    A small amount of new test data may also be released during
+                    this phase. The updated papers are also required to be
+                    submitted by this date.
+                  </li>
+                </ol>
+              </div>
+            ),
+          },
+          {
+            heading: "Final Outcome",
+            body: (
+              <div className="healthcare-hackathon-timeline-block-container">
+                <ol>
+                  <li>
+                    The organizers will publish a research journal paper with
+                    the top 3 to 5 teams (depending on the quality of the final
+                    works).
+                  </li>
+                  <li>
+                    Another round of presentations will be conducted in the
+                    hybrid mode on April 20, 2024.
+                  </li>
+                </ol>
+              </div>
+            ),
+          },
+        ]}
       />
-      <div className="healthcare-newbody">
-        {/* <div className="healthcare-newbody-trans"></div> */}
-        <div className="header">
-          <h1>Timeline</h1>
-        </div>
-        <div className="divider"></div>
-        <div className="paragraph">
-          <h2 className="phase-heading">Phase 1: <span className="date-range">20th Feb, 2024 - March 10, 2024</span></h2>
-          <p className="paragraph-content">1. Register for the hackathon.<br></br>
-          2. Perform the segmentation and upload results by the team name at the leaderboard on the <a href="https://segpc-2021.grand-challenge.org/evaluation/challenge/leaderboard/">test data</a><br></br>
-          3. Any team can upload the results at max 5 times on the leaderboard. (One can upload the results on the leaderboard by joining the page <a href="https://segpc-2021.grand-challenge.org/evaluation/challenge/leaderboard/">here</a>)<br></br>
-          4. Upload the paper in the IEEE ISBI conference template provided as an attachment.<br></br>
-          Link to the dataset: <a href="https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images">here</a></p>
-        </div>
-        <div className="divider"></div>
-        <div className="paragraph">
-          <h2 className="phase-heading">Outcome</h2>
-          <p className="paragraph-content">1. The papers will be reviewed and the results will be announced by March 12, 2024 for poster and paper presentation at RIISE 2024.<br></br>
-          2. There would be cash awards for the top 3 teams (Rs, 15k for the top team, 10k for the first runner-up, and 5k for the 2nd runner-up).<br></br>
-          3. Goodies for participating teams by the clubs...???<br></br></p>
-        </div>
-        <div className="divider"></div>
-        <div className="paragraph">
-          <h2 className="phase-heading">Phase 2: <span className="date-range">10th Feb, 2024</span></h2>
-          <p className="paragraph-content">1. The improvements will be suggested by the audience and/or the experts during RIISE. The challenge will continue and the second phase results and updated papers are required to be submitted by April 10, 2024. <br></br>
-          2. A small amount of new test data may also be released during this phase. The updated papers are also required to be submitted by this date.</p>
-        </div>
-        <div className="divider"></div>
-        <div className="paragraph">
-          <h2 className="phase-heading">Final Outcome</h2>
-          <p className="paragraph-content">1. The organizers will publish a research journal paper with the top 3 to 5 teams (depending on the quality of the final works).<br></br>
-          2. Another round of presentations will be conducted in the hybrid mode on April 20, 2024.</p>
-        </div>
-        <br></br>
-      </div>
       <Footer footerRef={footerRef} />
     </div>
   );
