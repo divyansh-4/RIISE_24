@@ -13,12 +13,12 @@ const App = () => {
   const scrollToFooter = () => {
     footerRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  const scrollToSchedule = () => {
-    scheduleRef.current.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToSchedule = () => {
+  //   scheduleRef.current.scrollIntoView({ behavior: "smooth" });
+  // };
   return (
     <div>
-      <Navbar scrollToFooter={scrollToFooter} scrollToSchedule={scrollToSchedule} />
+      <Navbar scrollToFooter={scrollToFooter} scheduleRef={scheduleRef} />
       <Header />
       <ThemePage />
       <Schedule scheduleRef={scheduleRef}/>

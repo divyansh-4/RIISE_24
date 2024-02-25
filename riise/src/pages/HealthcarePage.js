@@ -13,12 +13,15 @@ const HealthcarePage = () => {
   const scrollToFooter = () => {
     footerRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  const scrollToSchedule = () => {
-    scheduleRef.current.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToSchedule = () => {
+  //   scheduleRef.current.scrollIntoView({ behavior: "smooth" });
+  // };
   return (
     <div>
-      <Navbar scrollToFooter={scrollToFooter} scrollToSchedule={scrollToSchedule} />
+      <Navbar 
+      scrollToFooter={scrollToFooter} 
+      scheduleRef={scheduleRef} 
+      />
       <PageHeader
         title="Healthcare"
         subtitle="Build for India"
@@ -151,6 +154,7 @@ const HealthcarePage = () => {
             ),
           },
         ]}
+        scheduleRef={scheduleRef}
       />
       <Footer footerRef={footerRef} />
     </div>
