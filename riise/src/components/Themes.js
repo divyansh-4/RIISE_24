@@ -36,42 +36,54 @@ const ThemePage = () => {
           alt="India"
         />
         </Link>
-        <Card
+        <Link to="/roboticsandspace">
+        <Card 
           title={<h2>Robotics and Space Tech</h2>}
           body="Automating crucial tasks and unlocking space explorations"
           image={image2}
           alt="India"
         />
+        </Link>
+        <Link to="/bridgingthoeryandpractice">
         <Card
           title={<h2>Bridging theory and practice</h2>}
           body="Building and developing a strong foundation for innovation"
           image={image3}
           alt="India"
         />
+        </Link>
+        <Link to="/computationalgastronomy">
         <Card
           title={<h2>Computational gastronomy</h2>}
           body="Exploring the intersection of food, technology and culture"
           image={image4}
           alt="India"
         />
+        </Link>
+        <Link to="/sustainablemobility">
         <Card
           title={<h2>Sustainable mobility</h2>}
           body="Building Green, Accesible and Inclusive mobility"
           image={image5}
           alt="India"
         />
+        </Link>
+        <Link to="/5G-6G">
         <Card
           title={<h2>5G/6G </h2>}
           body="Powering India's Digital transformation on web connectivity"
           image={image6}
           alt="India"
         />
+        </Link>
+        <Link to="/advancemulticoresystems">
         <Card
           title={<h2>Advanced multicore systems</h2>}
           body="Building indigineous high-performance computing platforms"
           image={image7}
           alt="India"
         />
+        </Link>
       </RowContainer>
     </div>
   );

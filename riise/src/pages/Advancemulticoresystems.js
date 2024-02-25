@@ -3,9 +3,8 @@ import Navbar from "../components/Navbar";
 import PageHeader from "../components/PageHeader";
 import Speakers from "../components/Speakers";
 import Footer from "../components/Footer";
-import "./HealthcarePage.css";
 
-const DesignforIndia = () => {
+const Advancemulticoresystems= () => {
     const footerRef = useRef();
     const scheduleRef = useRef();
 
@@ -16,10 +15,13 @@ const DesignforIndia = () => {
         <div>
             <Navbar scrollToFooter={scrollToFooter} scheduleRef={scheduleRef} />
             <PageHeader
-                title="Design For India"
+                title="Advance Multicore Systems"
                 subtitle="Build for India"
-                description="Research Innovation and Incubation Showcase Events (RIISE), the annual flagship event of IIIT Delhi, brings together the brightest minds from academia, industry, and government under a roof, building a platform that transcends boundaries, transforming academic brilliance into tangible impact so as to create Human Centered solutions for India's unique challenges"
-                image="/designforIndia.png"
+                description="Research Innovation and Incubation Showcase Events (RIISE), 
+                the annual flagship event of IIIT Delhi, brings together the brightest minds from academia, 
+                industry, and government under a roof, building a platform that transcends boundaries, 
+                transforming academic brilliance into tangible impact"
+                image="/Advancemulticoresystems.png"
             />
             <Speakers />
             <Footer footerRef={footerRef} />
@@ -27,4 +29,5 @@ const DesignforIndia = () => {
     );
 };
 
-export default DesignforIndia;
+export default Advancemulticoresystems
+;

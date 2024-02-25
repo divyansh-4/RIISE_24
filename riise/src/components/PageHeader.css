@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+  /* font-family: 'DM Serif Display', serif; */
 .page-header-container{
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,6 +26,7 @@
 .page-header-title{
     font-size: 5rem;
     color: white;
+    font-family: "DM Serif Display", serif;
 }
 
 .page-header-subtitle{
