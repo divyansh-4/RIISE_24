@@ -8,13 +8,17 @@ import "./HealthcarePage.css";
 
 const HealthcarePage = () => {
   const footerRef = useRef();
+  const scheduleRef=useRef();
 
   const scrollToFooter = () => {
     footerRef.current.scrollIntoView({ behavior: "smooth" });
   };
+  const scrollToSchedule = () => {
+    scheduleRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
-      <Navbar scrollToFooter={scrollToFooter} />
+      <Navbar scrollToFooter={scrollToFooter} scrollToSchedule={scrollToSchedule} />
       <PageHeader
         title="Healthcare"
         subtitle="Build for India"

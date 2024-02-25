@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import HealthcarePage from "./pages/HealthcarePage";
+import DesignforIndia from "./pages/DesignforIndia"
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./main.css";
 
@@ -13,6 +14,10 @@ const router = createHashRouter([
   {
     path: "/healthcare",
     element: <HealthcarePage />,
+  },
+  {
+    path: "/designforindia",
+    element: <DesignforIndia />,
   },
 ]);
 
