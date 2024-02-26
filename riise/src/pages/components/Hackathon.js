@@ -7,7 +7,6 @@ const Hackathon = ({
   message,
   registerLink,
   timelineBlocks,
-  scheduleRef
 }) => {
   const mssgTextRef = useRef(null);
   const [padding, setPadding] = useState(50);
@@ -62,7 +61,7 @@ const Hackathon = ({
         </a>
       </div>
 
-      <div className="hackathon-newbody" ref = {scheduleRef}>
+      <div className="hackathon-newbody">
         <div className="hackathon-newbody-trans"></div>
         <div className="hackathon-timeline-header">Timeline</div>
 
