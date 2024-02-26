@@ -4,8 +4,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css"; // Import the CSS file for the navbar styles
 import LogoSvg from "../components/nav_logo.svg"; // Import your SVG logo
+import { useState } from "react";
 
-const Navbar = ({ scrollToFooter,scheduleRef }) => {
+const Navbar = ({ scrollToFooter }) => {
   return (
     <div className="navbar">
       <div className="navbar-container">
@@ -15,7 +16,7 @@ const Navbar = ({ scrollToFooter,scheduleRef }) => {
           </Link>
         </div>
         <div className="navbar-menu">
-          <Link to="#" className="navbar-button" onClick={() => scheduleRef.current?.scrollIntoView({ behavior: "smooth" })}>
+          <Link to="/#schedule-section" className="navbar-button">
             Schedule
           </Link>
           <Link to="/" className="navbar-button">

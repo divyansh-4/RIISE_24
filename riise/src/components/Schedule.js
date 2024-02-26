@@ -7,7 +7,7 @@ import sched_logo from './Sched-img.png';
 
 const Schedule = ({scheduleRef}) => {
   return (
-    <div ref={scheduleRef} className="events">
+    <div id="schedule-section" ref={scheduleRef} className="events">
       <div className="event-text">EVENTS</div>
       <div className="schedule-text">SCHEDULE</div>
       <div className="date-text">15TH - 16TH MARCH</div>
