@@ -84,24 +84,24 @@ const ThemePage = () => {
             />
           </Link>
 
-          <Link to="/#">
+          <Link to="/bharatai">
             <Card
               title={"Bharat AI"}
-              body=""
+              body="Fueling homegrown solution to address and invest in India's future"
               image={"/bharatai.png"}
               alt="India"
             />
           </Link>
-          <Link to="/#">
-            <Card title={"CiPD"} body="" image={"/cipd.png"} alt="India" />
+          <Link to="/cipd">
+            <Card title={"CiPD"} body="Empowering innovators with intelligent product development tools" image={"/cipd.png"} alt="India" />
           </Link>
-          <Link to="/#">
-            <Card title={"ISAC"} body="" image={"/isac.png"} alt="India" />
+          <Link to="/isac">
+            <Card title={"ISAC"} body="Tackling spectral congestion for efficient next-gen networks" image={"/isac.png"} alt="India" />
           </Link>
-          <Link to="/#">
+          <Link to="/perspectives">
             <Card
               title={"Perspectives on Time, History, and Modernity"}
-              body=""
+              body="Exploring the interplay of lived experience, clock time, and historical narratives  affecting  the modern world."
               image={"/history.png"}
               alt="India"
             />
