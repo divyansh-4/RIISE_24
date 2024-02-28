@@ -17,8 +17,8 @@ const Header = () => {
                                     minds from <br></br> academia, industry, and government under a roof, building a 
                                     platform that <br></br>  transcends boundaries, transforming academic brilliance into 
                                     tangible impact.</p>
-          <Link style={{ textDecoration: 'none' }} to="/">
-            <button className="register-button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd9CcVMj2jj9REtWkVmSXNwv6zVc2sw4DLEZGzZstuJQtEKjw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Register Here</a></button>
+          <Link style={{ textDecoration: 'none' }} to="https://docs.google.com/forms/d/e/1FAIpQLSd9CcVMj2jj9REtWkVmSXNwv6zVc2sw4DLEZGzZstuJQtEKjw/viewform?usp=sf_link">
+            <button className="register-button">Register Here</button>
           </Link>
         </div>
       </div>
