@@ -1,6 +1,6 @@
 .rowoverflow-container{
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .rowoverflow-item{
