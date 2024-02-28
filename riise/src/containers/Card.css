@@ -1,10 +1,16 @@
 .card {
     font-family: "Familjen Grotesk";
+    transition: transform 0.1s linear;
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 
 .card-img-container{
     width: 100%;
-    height: 20rem;
+    padding-bottom: 100%;
+    /* height: 10rem; */
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -17,46 +23,35 @@
 
 .card-title{
     /* height: 2.5rem; */
-    font-size: 1rem;
-    margin: 0;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 0.4rem 0;
     -webkit-line-clamp: 2;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    text-align: center;
 }
 
 .card p{
-    line-height: 1.3rem;
-    font-size: 0.8rem;
+    line-height: 1rem;
+    font-size: 0.7rem;
     -webkit-line-clamp: 3;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    margin: 0;
+    text-align: center; 
 }
 
-@media screen and (max-width: 1400px) {
-    .card-img-container{
-        height: 15rem;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .card-img-container{
-        height: 13rem;
-    }
-}
 
 @media screen and (max-width: 900px) {
-    .card-img-container{
-        height: 11rem;
-    }
     .card p{
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         line-height: 1rem;
     }
     .card-title{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     
 }
@@ -68,14 +63,14 @@
 
 @media screen and (max-width: 576px) {
     .card-img-container{
-        height: 8rem;
+        /* height: 8rem; */
     }
     .card p{
-        font-size: 0.5rem;
-        line-height: 0.8rem;
+        font-size: 0.8rem;
+        line-height: 1rem;
         -webkit-line-clamp: 2;
     }
     .card-title{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }

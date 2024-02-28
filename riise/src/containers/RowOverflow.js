@@ -7,11 +7,13 @@ const RowOverflow = ({ children }) => {
   useEffect(() => {
     function changeCount(e) {
       const w = window.innerWidth;
-      if (w >= 1000) {
+      if (w >= 1500) {
+        setRowCount(6);
+      } else if (w >= 1150) {
         setRowCount(4);
-      } else if (w >= 800) {
+      } else if (w >= 850) {
         setRowCount(3);
-      } else if (w >= 375) {
+      } else if (w >= 550) {
         setRowCount(2);
       } else {
         setRowCount(1);

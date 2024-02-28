@@ -9,7 +9,7 @@ const Card = ({ title, body, image, alt }) => {
       >
         {/* <img src={image} alt={alt} width="100%" /> */}
       </div>
-      <h5 className="card-title">{title}</h5>
+      <div className="card-title">{title}</div>
       <p>{body}</p>
     </div>
   );

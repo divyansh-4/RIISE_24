@@ -33,9 +33,17 @@
     color: black;
 }
 
-.card-row {
-    background-color: #fffeee;
-    border: 1px solid #fffeee;
+
+.theme-card-row-container{
+    width: 1350px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1450px) {
+    .theme-card-row-container{
+        width: 85%;
+    }
+    
 }
 
 @media screen and (max-width: 768px){
