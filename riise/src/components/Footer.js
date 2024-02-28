@@ -19,8 +19,8 @@ const Footer = ({ footerRef }) => {
           <div className="left-content">
             <img src={footer_logo} alt="Logo" />
             <div className="text-container">
-              <div className="heading">RIISE</div>
-              <div className="subheading">IIIT Delhi’s Annual Research Expo </div>
+              {/* <div>RIISE</div> */}
+              <div className="heading">IIIT Delhi’s Annual<br></br> Research Expo </div>
             </div>
           </div>
 
@@ -32,12 +32,29 @@ const Footer = ({ footerRef }) => {
             <a href="https://www.linkedin.com/school/iiit-delhi/"><img src={linkedin} alt="Facebook" className="social-icon" /></a>
   
           </div>
+          <div className="Address">
+          Okhla Industrial Estate, Phase III, near Govind Puri Metro Station, New Delhi, Delhi 110020.
+          <a className="map" href="https://maps.app.goo.gl/dGUYg2STxucfEkaK6">Open in Maps</a>
+          </div>
         </div>
 
         {/* Horizontal line */}
         <hr />
 
-        {/* Copyright text */}
+        <div className="footer-bottom">
+          <div className="footer-bottom-left">
+            <div className="footer-text-left">
+            © 2024 RIISE IIITD. All rights reserved.
+            </div>
+          </div>
+          {/* <div className="footer-bottom-right">
+            <div className="footer-text-right">
+              <a href="#" >Privacy Policy</a>
+              <a href="#" >Terms of Service</a>
+              <a href="#">Cookies Settings</a>
+            </div>
+          </div> */}
+        </div>
       </div>
     </div>
     </div>
