@@ -32,11 +32,11 @@ const Footer = ({ footerRef }) => {
             <a href="https://www.linkedin.com/school/iiit-delhi/"><img src={linkedin} alt="Facebook" className="social-icon" /></a>
   
           </div>
-          <div className="Address">
+        </div>
+        <div className="Address">
           Okhla Industrial Estate, Phase III, near Govind Puri Metro Station, New Delhi, Delhi 110020.
           <a className="map" href="https://maps.app.goo.gl/dGUYg2STxucfEkaK6">Open in Maps</a>
           </div>
-        </div>
 
         {/* Horizontal line */}
         <hr />
