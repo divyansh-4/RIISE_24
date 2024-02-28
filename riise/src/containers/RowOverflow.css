@@ -1,0 +1,8 @@
+.rowoverflow-container{
+    display: grid;
+    gap: 1rem;
+}
+
+.rowoverflow-item{
+    box-sizing: border-box;
+}
