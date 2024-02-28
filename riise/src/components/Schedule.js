@@ -5,9 +5,9 @@ import './Schedule.css'; // Import the CSS file for the header styles
 import sched_logo from './Sched-img.png';
 
 
-const Schedule = ({scheduleRef}) => {
+const Schedule = ({}) => {
   return (
-    <div ref={scheduleRef} className="events">
+    <div id="schedule-section" className="events">
       <div className="event-text">EVENTS</div>
       <div className="schedule-text">SCHEDULE</div>
       <div className="date-text">15TH - 16TH MARCH</div>

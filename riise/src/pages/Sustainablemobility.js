@@ -6,14 +6,14 @@ import Footer from "../components/Footer";
 
 const Sustainablemobility= () => {
     const footerRef = useRef();
-    const scheduleRef = useRef();
+    
 
     const scrollToFooter = () => {
         footerRef.current.scrollIntoView({ behavior: "smooth" });
     };
     return (
         <div>
-            <Navbar scrollToFooter={scrollToFooter} scheduleRef={scheduleRef} />
+            <Navbar scrollToFooter={scrollToFooter} />
             <PageHeader
                 title="Sustainable Mobility"
                 subtitle="Build for India"

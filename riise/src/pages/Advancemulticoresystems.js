@@ -6,14 +6,14 @@ import Footer from "../components/Footer";
 
 const Advancemulticoresystems= () => {
     const footerRef = useRef();
-    const scheduleRef = useRef();
+    
 
     const scrollToFooter = () => {
         footerRef.current.scrollIntoView({ behavior: "smooth" });
     };
     return (
         <div>
-            <Navbar scrollToFooter={scrollToFooter} scheduleRef={scheduleRef} />
+            <Navbar scrollToFooter={scrollToFooter} />
             <PageHeader
                 title="Advance Multicore Systems"
                 subtitle="Build for India"

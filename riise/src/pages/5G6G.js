@@ -6,14 +6,14 @@ import Footer from "../components/Footer";
 
 const _5G6G = () => {
     const footerRef = useRef();
-    const scheduleRef = useRef();
+    
 
     const scrollToFooter = () => {
         footerRef.current.scrollIntoView({ behavior: "smooth" });
     };
     return (
         <div>
-            <Navbar scrollToFooter={scrollToFooter} scheduleRef={scheduleRef} />
+            <Navbar scrollToFooter={scrollToFooter} />
             <PageHeader
                 title="5G/6G"
                 subtitle="Build for India"

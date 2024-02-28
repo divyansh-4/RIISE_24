@@ -1,11 +1,19 @@
 // src/components/Navbar.js
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 import "./Navbar.css"; // Import the CSS file for the navbar styles
 import LogoSvg from "../components/nav_logo.svg"; // Import your SVG logo
 
-const Navbar = ({ scrollToFooter,scheduleRef }) => {
+const Navbar = ({ scrollToFooter }) => {
+  const navigate = useNavigate();
+
+  const handleScheduleClick = () => {
+    navigate("/", { replace: true }); // Redirect to home page first
+    setTimeout(() => {
+      window.location.href = "#schedule-section"; // Scroll to schedule section
+    }, 100); // Adjust delay if needed
+  };
   return (
     <div className="navbar">
       <div className="navbar-container">
@@ -15,9 +23,9 @@ const Navbar = ({ scrollToFooter,scheduleRef }) => {
           </Link>
         </div>
         <div className="navbar-menu">
-          <Link to="#" className="navbar-button" onClick={() => scheduleRef.current?.scrollIntoView({ behavior: "smooth" })}>
+          <a href="#" className="navbar-button" onClick={handleScheduleClick}>
             Schedule
-          </Link>
+          </a>
           <Link to="/" className="navbar-button">
             Speakers
           </Link>

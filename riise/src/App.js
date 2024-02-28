@@ -9,21 +9,18 @@ import About from './components/About';
 
 const App = () => {
   const footerRef = useRef();
-  const scheduleRef = useRef();
+  // 
 
   const scrollToFooter = () => {
     footerRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  // const scrollToSchedule = () => {
-  //   scheduleRef.current.scrollIntoView({ behavior: "smooth" });
-  // };
   return (
     <div>
-      <Navbar scrollToFooter={scrollToFooter} scheduleRef={scheduleRef} />
+      <Navbar scrollToFooter={scrollToFooter} />
       <Header />
       <About />
       <ThemePage />
-      <Schedule scheduleRef={scheduleRef}/>
+      <Schedule/>
       <Footer footerRef={footerRef}/>
     </div>
   );

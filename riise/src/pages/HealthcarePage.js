@@ -8,19 +8,14 @@ import "./HealthcarePage.css";
 
 const HealthcarePage = () => {
   const footerRef = useRef();
-  const scheduleRef=useRef();
 
   const scrollToFooter = () => {
     footerRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  // const scrollToSchedule = () => {
-  //   scheduleRef.current.scrollIntoView({ behavior: "smooth" });
-  // };
   return (
     <div>
       <Navbar 
       scrollToFooter={scrollToFooter} 
-      scheduleRef={scheduleRef} 
       />
       <PageHeader
         title="Healthcare"
@@ -154,7 +149,6 @@ const HealthcarePage = () => {
             ),
           },
         ]}
-        scheduleRef={scheduleRef}
       />
       <Footer footerRef={footerRef} />
     </div>
