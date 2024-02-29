@@ -1,8 +1,8 @@
 import "./Card.css";
 
-const Card = ({ title, body, image, alt }) => {
+const Card = ({ title, body, image, alt, hover = true }) => {
   return (
-    <div className="card">
+    <div className={`card ${hover ? "card-hover" : ""}`}>
       <div
         className="card-img-container"
         style={{ backgroundImage: `url('${image}')` }}
