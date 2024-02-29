@@ -18,7 +18,7 @@ const ThemePage = () => {
       <h2 className="theme-heading">THEME</h2>
       <h1 className="section-heading">BUILD FOR INDIA</h1>
       <div className="theme-card-row-container">
-        <RowOverflow>
+        <RowOverflow count={6}>
           <Link to="/healthcare">
             <Card
               title="Healthcare"

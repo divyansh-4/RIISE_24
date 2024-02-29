@@ -1,14 +1,17 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import "./RowOverflow.css";
 
-const RowOverflow = ({ children }) => {
+const RowOverflow = ({ children, count }) => {
   const [rowCount, setRowCount] = useState(6);
 
   useEffect(() => {
-    function changeCount(e) {
+    function changeCount() {
       const w = window.innerWidth;
-      if (w >= 1500) {
-        setRowCount(6);
+      if (!Array.isArray(children) || children.length === 1) {
+        setRowCount(4);
+      } else if (w >= 1500) {
+        setRowCount(count);
       } else if (w >= 1150) {
         setRowCount(4);
       } else if (w >= 850) {
@@ -21,20 +24,27 @@ const RowOverflow = ({ children }) => {
     }
 
     changeCount();
-    window.addEventListener("resize", changeCount);
+    const handleResize = () => changeCount();
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener("resize", changeCount);
+      window.removeEventListener("resize", handleResize);
     };
-  });
+  }, [children, count]);
+
+  if (!Array.isArray(children)) {
+    children = [children];
+  }
 
   return (
     <div
       className="rowoverflow-container"
       style={{ gridTemplateColumns: `repeat(${rowCount}, 1fr)` }}
     >
-      {children.map((child) => {
-        return <div className="rowoverflow-item">{child}</div>;
-      })}
+      {children.map((child, index) => (
+        <div key={index} className="rowoverflow-item">
+          {child}
+        </div>
+      ))}
     </div>
   );
 };
