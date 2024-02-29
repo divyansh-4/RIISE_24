@@ -40,6 +40,10 @@
     margin: 0 auto;
 }
 
+.keynote-card-row-container{
+    color: white !important;
+}
+
 @media screen and (max-width: 1450px) {
     .theme-card-row-container {
         width: 85%;

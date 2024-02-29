@@ -1,9 +1,12 @@
 .card {
     font-family: "Familjen Grotesk";
+}
+
+.card-hover{
     transition: transform 0.1s linear;
 }
 
-.card:hover{
+.card-hover:hover{
     transform: scale(1.05);
 }
 
