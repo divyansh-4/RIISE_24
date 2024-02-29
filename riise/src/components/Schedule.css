@@ -1,10 +1,12 @@
+/* src/components/Schedule.css */
+
 .events {
-  margin-top: 30%; /* Adjust margin-top as necessary */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
+  position: relative;
 }
 
 .event-text,
@@ -12,25 +14,26 @@
 .date-text,
 .coming-soon-text {
   font-family: 'DM Serif Display', serif;
+  text-align: center;
 }
 
 .event-text {
   font-style: italic;
   font-size: 2.5vw; /* Adjust font size as necessary */
   color: green;
-  margin-bottom: 1.5vw; /* Add space after "EVENTS" */
+  margin-bottom: 1vw; /* Add space after "EVENTS" */
 }
 
 .schedule-text {
   font-size: 5vw; /* Adjust font size as necessary */
   color: black;
-  margin-bottom: 1.5vw;
+  margin-bottom: 1vw;
 }
 
 .date-text {
   font-family: 'Lato', sans-serif;
   font-size: 3vw; /* Adjust font size as necessary */
-  margin-bottom: 10vw; /* Adjust margin-bottom as necessary */
+  margin-bottom: 2vw; /* Adjust margin-bottom as necessary */
 }
 
 .coming-soon-text {
@@ -38,11 +41,15 @@
   text-transform: uppercase; 
   font-weight: bold;
   font-style: italic;
-  margin-bottom: 10vw; /* Adjust margin-bottom as necessary */
+  margin-bottom: 2vw; /* Adjust margin-bottom as necessary */
 }
 
-.imge {
-  margin-bottom: 15vw; /* Adjust margin-bottom as necessary */
+.image {
+  margin-bottom: 3vw; /* Adjust margin-bottom as necessary */
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw; /* Adjust gap between divs as necessary */
 }
 
 @media screen and (max-width: 768px) {
@@ -56,23 +63,25 @@
 
   .date-text {
     font-size: 5vw;
-    margin-bottom: 15vw;
+    margin-bottom: 5vw;
   }
 
   .coming-soon-text {
     font-size: 7vw;
-    margin-bottom: 15vw;
+    margin-bottom: 5vw;
   }
 
-  .imge {
-    margin-bottom: 5vw; /* Default margin for larger screens */
-    width: 500px;
+  .image {
+    margin-bottom: 2vw; /* Default margin for larger screens */
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: 500px; /* Add max-width for better responsiveness */
   }  
 }
 
 @media screen and (max-width: 520px) {
-  .imge {
-    margin-bottom: 15vw; /* Further adjusted margin for even smaller screens */
-    width: 300px;
+  .image {
+    margin-bottom: 5vw; /* Further adjusted margin for even smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: 300px; /* Add max-width for better responsiveness */
   }
 }
