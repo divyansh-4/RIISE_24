@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import App from "./App";
 import HealthcarePage from "./pages/HealthcarePage";
 import DesignforIndia from "./pages/DesignforIndia";
@@ -9,13 +9,16 @@ import Bridgingthoeryandpractice from "./pages/Bridgingtheoryandpractice";
 import Computationalgastronomy from "./pages/Computationalgastronomy";
 import Sustainablemobility from "./pages/Sustainablemobility";
 import Advancemulticoresystems from "./pages/Advancemulticoresystems";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cipd from "./pages/Cipd";
+import Bharatai from "./pages/Bharatai";
+import Isac from "./pages/Isac";
+import Perspectives from "./pages/Perspectives";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./main.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/healthcare" element={<HealthcarePage />} />
@@ -26,7 +29,12 @@ root.render(
         <Route path="/computationalgastronomy" element={<Computationalgastronomy />} />
         <Route path="/sustainablemobility" element={<Sustainablemobility />} />
         <Route path="/advancemulticoresystems" element={<Advancemulticoresystems />} />
+        <Route path="/bharatai" element={<Bharatai />} />
+        <Route path="/cipd" element={<Cipd />} />
+        <Route path="/isac" element={<Isac />} />
+        <Route path="/perspectives" element={<Perspectives />} />
       </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+    </HashRouter>
+  </React.StrictMode>,
+  document.getElementById("root")
 );

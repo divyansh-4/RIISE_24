@@ -14,6 +14,12 @@ const Navbar = ({ scrollToFooter }) => {
       window.location.href = "#schedule-section"; // Scroll to schedule section
     }, 100); // Adjust delay if needed
   };
+  const handleAboutClick = () => {
+    navigate("/", { replace: true }); // Redirect to home page first
+    setTimeout(() => {
+      window.location.href = "#about-section"; // Scroll to schedule section
+    }, 100); // Adjust delay if needed
+  };
   return (
     <div className="navbar">
       <div className="navbar-container">
@@ -23,15 +29,15 @@ const Navbar = ({ scrollToFooter }) => {
           </Link>
         </div>
         <div className="navbar-menu">
-          <a href="#" className="navbar-button" onClick={handleScheduleClick}>
+          <a href="/" className="navbar-button" >
             Schedule
           </a>
           <Link to="/" className="navbar-button">
             Speakers
           </Link>
-          <Link to="/" className="navbar-button">
+          {/* <Link to="#" className="navbar-button" onClick={handleAboutClick}>
             About Us
-          </Link>
+          </Link> */}
           <Link to="#" className="navbar-button" onClick={scrollToFooter}>
             Contact Us
           </Link>

@@ -6,6 +6,7 @@
 
 .theme-container{
     margin-top: 5rem;
+    
 }
 
 .theme-container *{
@@ -34,13 +35,13 @@
 }
 
 
-.theme-card-row-container{
+.keynote-card-row-container{
     width: 1350px;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 1450px) {
-    .theme-card-row-container{
+    .keynote-card-row-container{
         width: 85%;
     }
     

@@ -6,6 +6,7 @@ import Schedule from "./components/Schedule";
 import ThemePage from "./components/Themes";
 import Navbar from "./components/Navbar";
 import About from './components/About';
+import Keynote from './components/Keynote';
 
 const App = () => {
   const footerRef = useRef();
@@ -20,6 +21,7 @@ const App = () => {
       <Header />
       <About />
       <ThemePage />
+      <Keynote />
       <Schedule/>
       <Footer footerRef={footerRef}/>
     </div>
