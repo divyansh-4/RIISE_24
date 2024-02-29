@@ -17,12 +17,16 @@ const Header = () => {
                                     minds from <br></br> academia, industry, and government under a roof, building a 
                                     platform that <br></br>  transcends boundaries, transforming academic brilliance into 
                                     tangible impact.</p>
-          <Link style={{ textDecoration: 'none' }} to="https://docs.google.com/forms/d/e/1FAIpQLSd9CcVMj2jj9REtWkVmSXNwv6zVc2sw4DLEZGzZstuJQtEKjw/viewform?usp=sf_link">
+          
             <div className='button-row'>
+            <Link style={{ textDecoration: 'none' }} to="https://docs.google.com/forms/d/e/1FAIpQLSd9CcVMj2jj9REtWkVmSXNwv6zVc2sw4DLEZGzZstuJQtEKjw/viewform?usp=sf_link">
             <button className="register-button">Register Here</button>
-            <button className="register-button">Posters</button>
+            </Link>
+            <Link style={{ textDecoration: 'none' }} to="https://forms.gle/mVQhQNSRvdwjDm1N8">
+            <button className="register-button">Call for Posters</button>
+            </Link>
             </div>
-          </Link>
+          
         </div>
       </div>
     </header>
