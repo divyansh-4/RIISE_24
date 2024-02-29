@@ -6,8 +6,8 @@ import RowOverflow from "../containers/RowOverflow";
 const Keynote = () => {
   return (
     <div className="keynote-container">
-      <h2 className="theme-heading">EVENTS</h2>
-      <h1 className="section-heading">KEYNOTE SPEAKERS</h1>
+      <h2 className="theme-heading2">EVENTS</h2>
+      <h1 className="section-heading2">KEYNOTE SPEAKERS</h1>
       <div className="keynote-card-row-container">
         <RowOverflow center={true} countRelWidth={[5, 5, 3, 3, 3]}>
           <Card

@@ -6,6 +6,8 @@
 
 .keynote-container {
     margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: #5BA500;
 }
 
@@ -21,17 +23,17 @@
     color: inherit;
 }
 
-.theme-heading,
-.section-heading {
+.theme-heading2,
+.section-heading2 {
     text-align: center;
 }
 
-.theme-heading {
-    color: green;
+.theme-heading2 {
+    color: black;
 }
 
-.section-heading {
-    color: black;
+.section-heading2 {
+    color: white;
 }
 
 
@@ -52,7 +54,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .section-heading {
+    .section-heading2 {
         font-size: 1.5rem;
     }
 }
