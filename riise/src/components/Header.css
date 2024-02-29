@@ -66,6 +66,10 @@ header {
     margin: 2vw 0; /* Adjust margin for smaller screens */
 }
 
+.button-row {
+  display: flex;
+  gap: 1rem; /* Adjust the gap between buttons as necessary */
+}
 .register-button {
     text-decoration: none;
     display: flex;
