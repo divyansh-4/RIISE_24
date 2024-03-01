@@ -3,9 +3,9 @@ import "./Keynote.css";
 import Card from "../containers/Card";
 import RowOverflow from "../containers/RowOverflow";
 
-const Keynote = () => {
+const Keynote = ({KeynoteRef}) => {
   return (
-    <div className="keynote-container">
+    <div ref = {KeynoteRef} className="keynote-container">
       <h2 className="theme-heading2">EVENTS</h2>
       <h1 className="section-heading2">KEYNOTE SPEAKERS</h1>
       <div className="keynote-card-row-container">

@@ -5,7 +5,7 @@ import { Link ,useNavigate} from "react-router-dom";
 import "./Navbar.css"; // Import the CSS file for the navbar styles
 import LogoSvg from "../components/nav_logo.svg"; // Import your SVG logo
 
-const Navbar = ({ scrollToFooter }) => {
+const Navbar = ({scrollToSchedule, scrollToFooter , scrollToKeynote }) => {
   return (
     <div className="navbar">
       <div className="navbar-container">
@@ -15,12 +15,12 @@ const Navbar = ({ scrollToFooter }) => {
           </Link>
         </div>
         <div className="navbar-menu">
-          {/* <a href="/" className="navbar-button" >
+          <Link to="#" className="navbar-button" onClick={scrollToSchedule}>
             Schedule
-          </a>
-          <Link to="/" className="navbar-button">
+          </Link>
+          <Link to="#" className="navbar-button" onClick={scrollToKeynote}>
             Speakers
-          </Link> */}
+          </Link>
           {/* <Link to="#" className="navbar-button" onClick={handleAboutClick}>
             About Us
           </Link> */}
