@@ -82,6 +82,7 @@ body{
     font-size: 18px;
     font-weight: bold;
     border-radius: 25px;
+    text-align: justify;
 }
 
 .s-prizes h2{
@@ -94,11 +95,19 @@ body{
     width: 100%;
 }
 
-.s-prizes ul{
-    background-color: #E3FFE7;
-    padding: 0 10%;
-    border-radius: 2%;
+.s-prizes table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 10px; /* Adjust margin as needed */
 }
+
+.s-prizes td {
+  padding: 5px;
+  text-align: center;
+}
+
+/*  */
+
 
 span{
     font-weight: bold;
@@ -109,6 +118,16 @@ span{
     margin-left: 11%;
     width: 45%;
     text-align: justify;
+}
+
+.second-section li{
+  margin-top: 2%;
+  
+}
+a{
+  text-decoration: underline;
+  color: #000;
+  /* text-decoration-color: #000; */
 }
 .fourth-section{
     width: 100%;

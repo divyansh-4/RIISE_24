@@ -27,12 +27,11 @@ const OnCoSlice = () => {
             encouraged to participate.<br></br>
             <br></br>
             Perform the segmentation and upload results by the team name on the
-            leaderboard on the test data. Any team can upload the results at max
+            leaderboard on the <a href="https://segpc-2021.grand-challenge.org/evaluation/final-test-phase/leaderboard/">test data</a>. Any team can upload the results at max
             5 times. on the leaderboard. One can upload the results on the
-            leaderboard by joining the page here. Upload the paper in the IEEE
+            leaderboard by joining the page <a href="https://segpc-2021.grand-challenge.org/evaluation/challenge/leaderboard/">here</a>. Upload the paper in the IEEE
             ISBI conference template provided as an attachment. The Submissions
-            will be made using this link and the link to the dataset is provided
-            here.
+            will be made using this <a href="https://www.figma.com/exit?url=https%3A%2F%2Fforms.gle%2FvVBekDQVaAVhLmvM6">link</a> and the link to the dataset is provided <a href="https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images">here</a>.
           </p>
         </div>
         <div className="image">
@@ -54,16 +53,26 @@ const OnCoSlice = () => {
             organizers also thank the Centre of Excellence in Healthcare,
             IIIT-Delhi, for supporting this event.
           </li>
-          <li>Dataset Description and Availability: SEGPC-2021 Dataset.</li>
-          <li>Dataset Description and Availability: SEGPC-2021 Dataset</li>
+          <li>Dataset Description and Availability: <a href="https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images">SEGPC-2021 Dataset</a></li>
         </div>
         <div className="s-prizes">
           <h2>Prizes</h2>
-          <br></br>
-          <ul>1st Place&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.15000</ul>
-          <ul>2nd Place&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.10000</ul>
-          <ul>3rd Place&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rs.5000</ul>
-          <br></br>
+          <table>
+    <tbody>
+      <tr>
+        <td>1st Place</td>
+        <td>Rs.15000</td>
+      </tr>
+      <tr>
+        <td>2nd Place</td>
+        <td>Rs.10000</td>
+      </tr>
+      <tr>
+        <td>3rd Place</td>
+        <td>Rs.5000</td>
+      </tr>
+    </tbody>
+  </table>
         </div>
       </div>
       <div className="third-section">
@@ -170,7 +179,7 @@ const OnCoSlice = () => {
         <div className="lastline">
           <p>
             {" "}
-            For any further information, you can contact us using RIISE email
+            For any further information, you can contact us using <a href="https://riise@iiitd.ac.in/">RIISE</a> email
             id.
           </p>
         </div>
