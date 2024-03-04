@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import PageHeader from "../components/PageHeader";
 import Speakers from "../components/Speakers";
 import Footer from "../components/Footer";
+import HealthcarePitch from "./components/healthcare/HealthcarePitch";
 import Hackathon from "./components/Hackathon";
 import "./HealthcarePage.css";
 
@@ -14,9 +15,7 @@ const HealthcarePage = () => {
   };
   return (
     <div>
-      <Navbar 
-      scrollToFooter={scrollToFooter} 
-      />
+      <Navbar scrollToFooter={scrollToFooter} />
       <PageHeader
         title="Healthcare"
         subtitle="Build for India"
@@ -150,6 +149,9 @@ const HealthcarePage = () => {
           },
         ]}
       />
+      <div style={{ padding: "0 4rem" }}>
+        <HealthcarePitch />
+      </div>
       <Footer footerRef={footerRef} />
     </div>
   );

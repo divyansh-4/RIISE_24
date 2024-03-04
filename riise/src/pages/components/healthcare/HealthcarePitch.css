@@ -1,0 +1,144 @@
+.healthcare-pitch-body{
+    font-size: 1rem;
+}
+
+.healthcare-pitch-about-wrapper{
+    display: flex;
+}
+
+.healthcare-pitch-about{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 65%;
+    text-align: justify;
+    line-height: 1.8em;
+    font-size: 1em;
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+}
+
+.healthcare-pitch-about-sidebar{
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.healthcare-pitch-participate-ul{
+    font-family: 'lato', sans-serif;
+    line-height: 1.5em;
+    margin: auto;
+    width: 85%;
+    padding: 1em 0 2em 0;
+}
+
+.healthcare-pitch-categories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+}
+
+.healthcare-pitch-category-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.healthcare-pitch-category-box-title{
+    font-weight: 700;
+    font-size: 1.2em;
+    max-width: 80%;
+    text-align: center;
+}
+
+.healthcare-pitch-category-box-content{
+    font-weight: 400;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1500px) {
+    .healthcare-pitch-about{
+        flex-basis: 55%;
+    }
+    .healthcare-pitch-body{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .healthcare-pitch-body{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .healthcare-pitch-categories{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .healthcare-pitch-about{
+        flex-basis: 100%;
+    }
+
+    .healthcare-pitch-about-sidebar{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .healthcare-pitch-body{
+        font-size: 0.6rem;
+    }
+}
+
+.healthcare-pitch-process-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+}
+
+.healthcare-pitch-process-instructions{
+    font-family: 'lato', sans-serif;
+    line-height: 1.5em;
+}
+
+.healthcare-pitch-date-box{
+    padding: 1em 3em !important; 
+    display: flex;
+    flex-direction: column;
+}
+
+.healthcare-pitch-date-box-header{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0.5em 0 1em 0;
+}
+
+.healthcare-pitch-date-box-body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'lato', sans-serif;
+    font-weight: 500;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.healthcare-pitch-date{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .healthcare-pitch-process-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+.healthcare-pitch-outcome{
+    font-family: 'lato', sans-serif;
+    line-height: 1.5em;
+}
