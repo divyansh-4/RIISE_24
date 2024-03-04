@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.top-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 42px;
+    margin-top:10%;
+    font-family: DM sarif display;
+}
+.second-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: darkgreen;
+    font-family: DM sarif display;
+}
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Align items to stretch to the container height */
+  width: 100%;
+  margin-top: 5%;
+  gap: 5%;
+}
+
+.first-section .text {
+  width: 50%;
+  text-align: justify;
+  margin-left: 12%;
+  align-self: stretch; /* Stretch the text element to match container height */
+}
+
+.first-section .image {
+  width: 50%;
+}
+
+.first-section .image img {
+  width: 80%; /* Use 80% width of the container */
+  /* height: auto; Maintain aspect ratio */
+  align-self: stretch; /* Stretch the image element to match container height */
+}
+
+
+.second-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;    
+    margin-top: 5%;
+}
+
+.second-section .s-text{
+    width: 45%;
+    margin-left: 9%;
+    text-align:justify;
+}
+.second-section .s-text ul{
+    text-align:justify;
+}
+
+.s-prizes{
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7%;
+    align-items: center;
+    justify-content: center;
+    background-color: #E3FFE7;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.s-prizes h2{
+    background-color: #036132;
+    color:white;
+    display:flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2%;
+    width: 100%;
+}
+
+.s-prizes ul{
+    background-color: #E3FFE7;
+    padding: 0 10%;
+    border-radius: 2%;
+}
+
+span{
+    font-weight: bold;
+}
+
+.third-section .t-text{
+    margin-top: 5%;
+    margin-left: 11%;
+    width: 45%;
+    text-align: justify;
+}
+.fourth-section{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.fourth-section h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 5%;
+    font-family: DM sarif display;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Ensure children stretch to match height */
+  gap: 5%;
+  width: 100%;
+  margin:auto;
+}
+
+.box_1, .box_2 {
+  display: flex; /* Set display to flex */
+  flex-direction: column; /* Stack children vertically */
+  /* flex: 1; Make both boxes take equal height */
+  background-color: #10884C;
+  padding: 3%;
+  color: white;
+  border-radius: 15px;
+  width: 40%;
+}
+
+.text-margin {
+  /* margin-top: 5%; */
+  /* flex: 1; Make text-margin div take up equal height within box_1 and box_2 */
+}
+
+/* Adjust other styles as needed */
+
+
+.text-margin h4{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:DM sarif display;
+}
+/* .text-margin{
+    margin-top: 5%;
+} */
+/* Your existing CSS */
+
+.text-margin ul {
+  /* list-style-type: none; Remove default list styles */
+  padding-left: 20px; /* Add left padding for indentation */
+}
+
+.text-margin li {
+  margin-bottom: 5px; /* Adjust bottom margin for better spacing between items */
+}
+
+/* Your other CSS styles... */
+
+.lastline{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

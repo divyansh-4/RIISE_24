@@ -4,6 +4,7 @@ import PageHeader from "../components/PageHeader";
 import Speakers from "../components/Speakers";
 import Footer from "../components/Footer";
 import HealthcarePitch from "./components/healthcare/HealthcarePitch";
+import OnCoSlice from "./components/healthcare/Oncoslice";
 import Hackathon from "./components/Hackathon";
 import "./HealthcarePage.css";
 
@@ -152,6 +153,7 @@ const HealthcarePage = () => {
       <div style={{ padding: "0 4rem" }}>
         <HealthcarePitch />
       </div>
+      <OnCoSlice />
       <Footer footerRef={footerRef} />
     </div>
   );
