@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
 }
-
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  padding: 0 5%;
+}
 .top-heading{
     display: flex;
     justify-content: center;
@@ -166,6 +172,7 @@ a{
 .text-margin {
   /* margin-top: 5%; */
   /* flex: 1; Make text-margin div take up equal height within box_1 and box_2 */
+  
 }
 
 /* Adjust other styles as needed */
@@ -199,4 +206,45 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .first-section{
+        flex-direction: column;
+    }
+    .first-section .text{
+        width: 100%;
+        margin-left: 0;
+    }
+    .first-section .image{
+        width: 100%;
+    }
+    .second-section{
+        flex-direction: column;
+    }
+    .second-section .s-text{
+        width: 100%;
+        margin-left: 0;
+    }
+    .s-prizes{
+        width: 100%;
+        margin-right: 0;
+    }
+    .third-section .t-text{
+        width: 100%;
+        margin-left: 0;
+    }
+    /* .fourth-section{
+        flex-direction: column;
+    } */
+    .box_1, .box_2{
+        width: 40%;
+    }
+    .text-margin{
+        margin-top: 5%;
+        font-size: 12px;
+    }
+    /* .lastline{
+        flex-direction: column;
+    } */
 }

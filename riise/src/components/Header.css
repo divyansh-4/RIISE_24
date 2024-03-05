@@ -13,8 +13,9 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    margin: 10%; /* Adjust margin for smaller screens */
+    margin: 9% 10% 10% 20%; /* Adjust margin for smaller screens */
     height: 60vh; /* Adjust height for smaller screens */
+    transform: translateY(-10%); /* Adjust transform for smaller screens */
 }
 
 .vertical-line {

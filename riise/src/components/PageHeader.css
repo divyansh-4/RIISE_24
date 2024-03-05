@@ -124,7 +124,7 @@
 
 @media screen and (max-width: 500px) {
     .page-header-title{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .page-header-subtitle{
         margin: 1rem 0rem;

@@ -24,7 +24,7 @@
 }
 
 .text-container {
-  width: 300px;
+  /* width: 300px; */
 height: 45px;
 flex-shrink: 0;
 margin-left: 20px;
@@ -60,7 +60,6 @@ hr {
 .Address {
   margin-top: 20px;
   display: flex;
-  width: 1048px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;

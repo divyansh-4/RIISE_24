@@ -3,7 +3,7 @@ import "./Oncoslice.css";
 
 const OnCoSlice = () => {
   return (
-    <div>
+    <div className="main">
       <h1 className="top-heading">ONCOSLICE HACKATHON</h1>
       <h5 className="second-heading">
         Localize and Extract Cancer Cells from Microscopic Images
