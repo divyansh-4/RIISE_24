@@ -14,9 +14,9 @@ import RowContainer from "../containers/RowContainer";
 const Speakers = () => {
   return (
     <div className="theme-container">
-      <h2 className="theme-heading">EVENTS</h2>
+      {/* <h2 className="theme-heading">EVENTS</h2>
       <h1 className="section-heading">SPEAKERS</h1>
-      <h1 className="temp-soon">COMING SOON</h1>
+      <h1 className="temp-soon">COMING SOON</h1> */}
       {/* <RowContainer scroll={true} speed={7}>
         <Card
           title="Design for India"
