@@ -6,8 +6,17 @@ import Footer from "../components/Footer";
 
 const Computationalgastronomy = () => {
     const footerRef = useRef();
-    
-
+    const speakerData = [
+        {
+          title: "Manu Bajaj",
+          body: "Founder and MD NuTaste Group",
+          image: "/manu.png",
+          alt: "jaswinderchadha",
+        },
+        
+        // Add more keynote speakers as needed
+      ];
+     
     const scrollToFooter = () => {
         footerRef.current.scrollIntoView({ behavior: "smooth" });
     };
@@ -23,7 +32,7 @@ const Computationalgastronomy = () => {
                 transforming academic brilliance into tangible impact."
                 image="/Computationalgastronomy.png"
             />
-            <Speakers />
+             <Speakers speakerData={speakerData} heading="SPEAKERS" />
             <Footer footerRef={footerRef} />
         </div>
     );

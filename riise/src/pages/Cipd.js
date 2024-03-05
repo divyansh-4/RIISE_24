@@ -6,8 +6,7 @@ import Footer from "../components/Footer";
 
 const Cipd = () => {
     const footerRef = useRef();
-
-
+        // Add more keynote speakers as needed
     const scrollToFooter = () => {
         footerRef.current.scrollIntoView({ behavior: "smooth" });
     };
@@ -23,7 +22,6 @@ const Cipd = () => {
                 transforming academic brilliance into tangible impact"
                 image="/cipd.png"
             />
-            <Speakers />
             <Footer footerRef={footerRef} />
         </div>
     );

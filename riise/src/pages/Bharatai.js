@@ -6,7 +6,44 @@ import Footer from "../components/Footer";
 
 const Bharatai = () => {
     const footerRef = useRef();
-
+    const speakerData = [
+        {
+          title: "Dr Manohar",
+          body: "Professor at IIIT Delhi",
+          image: "/manohar.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Mr. Soma Dhaval",
+          body: "Director, ML @ Wadhwani AI",
+          image: "/soma.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Mr. Mihir Kulkarni",
+          body: "ML Engineer, Wadhwani AI",
+          image: "/mihir.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Mr. Nilay Shrivastava",
+          body: "AI Researcher @ Adobe Research",
+          image: "/nilay.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Mr. Sumit Bhatia",
+          body: "Senior Machine Learning Scientist at the Media and Data Science Research Lab, Adobe Inc",
+          image: "/sumit.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Mr. Shailabh S",
+          body: "LinkedIn Top Voice",
+          image: "/shailabh.png",
+          alt: "jaswinderchadha",
+        },
+      ];
 
     const scrollToFooter = () => {
         footerRef.current.scrollIntoView({ behavior: "smooth" });
@@ -23,7 +60,7 @@ const Bharatai = () => {
                 transforming academic brilliance into tangible impact"
                 image="/bharatai.png"
             />
-            <Speakers />
+            <Speakers speakerData={speakerData} heading="SPEAKERS" countRelWidth={[4,4,3,1]}/>
             <Footer footerRef={footerRef} />
         </div>
     );

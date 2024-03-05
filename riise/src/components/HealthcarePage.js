@@ -17,36 +17,49 @@ const HealthcarePage = () => {
   };
   const speakerData = [
     {
-      title: "Dr Ramesh Venkatesan",
-      body: "Senior Director,    Wipro GE Healthcare",
-      image: "/ramesh.png",
-    },
-    {
-      title: "Dr Rupesh Chaturvedi",
-      body: "Prof JNU",
-      image: "/chatur.png",
+      title: "Jaswinder Chadha",
+      body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+      image: "/mrjaswinder.png",
       alt: "jaswinderchadha",
     },
     {
-      title: "Dr Kshitij Jadhav",
-      body: "Assistant Professor, Koita Centre for Digital Health, IIT Bombay",
-      image: "/Jadhav.png",
+      title: "Jaswinder Chadha",
+      body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+      image: "/mrjaswinder.png",
       alt: "jaswinderchadha",
     },
     {
-      title: "Dr Neetu Singh",
-      body: "Assistant Professor,Center for Biomedical Engineering,IIT Delhi",
-      image: "/neetusingh.png",
+      title: "Jaswinder Chadha",
+      body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+      image: "/mrjaswinder.png",
+      alt: "jaswinderchadha",
+    },
+    {
+      title: "Jaswinder Chadha",
+      body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+      image: "/mrjaswinder.png",
+      alt: "jaswinderchadha",
+    },
+    {
+      title: "Jaswinder Chadha",
+      body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+      image: "/mrjaswinder.png",
+      alt: "jaswinderchadha",
+    },
+    {
+      title: "Jaswinder Chadha",
+      body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+      image: "/mrjaswinder.png",
       alt: "jaswinderchadha",
     },
     // Add more keynote speakers as needed
   ];
   const keynoteData = [
     {
-      title: "Mr Dileep Mangsuli",
-      body: "Executive Director at Siemens Healthineers",
-      image: "/dilipman.png",
-      alt: "Dileep Mangsuli",
+      title: "Jaswinder Chadha",
+      body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+      image: "/mrjaswinder.png",
+      alt: "jaswinderchadha",
     },
   ];
   return (
@@ -197,15 +210,4 @@ export default HealthcarePage;
 //             ),
 //           },
 //         ]}
-//       /> */}/* image 50 */
-
-// width: 201px;
-// height: 201px;
-
-// background: url(image);
-// border-radius: 16.68px;
-
-// /* Inside auto layout */
-// flex: none;
-// order: 0;
-// flex-grow: 0;
+//       /> */}

@@ -6,8 +6,15 @@ import Footer from "../components/Footer";
 
 const Sustainablemobility= () => {
     const footerRef = useRef();
-    
 
+    const speakerData = [
+        {
+          title: "Special Commisioner Transport",
+          body: "Delhi Government",
+          
+        },
+    ];
+    
     const scrollToFooter = () => {
         footerRef.current.scrollIntoView({ behavior: "smooth" });
     };
@@ -23,7 +30,8 @@ const Sustainablemobility= () => {
                 transforming academic brilliance into tangible impact"
                 image="/Sustainablemobility.png"
             />
-            <Speakers />
+            <Speakers speakerData={speakerData} heading="SPEAKERS" />
+      
             <Footer footerRef={footerRef} />
         </div>
     );

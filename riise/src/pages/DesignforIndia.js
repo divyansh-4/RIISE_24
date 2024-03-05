@@ -7,6 +7,14 @@ import "./HealthcarePage.css";
 
 const DesignforIndia = () => {
     const footerRef = useRef();
+      const keynoteData = [
+        {
+          title: "Prof. Pradeep Yammiyavar",
+          body: "Design Group, Dept of MMAE, IIT Dharwad",
+          image: "/image 41.png",
+          alt: "jaswinderchadha",
+        },
+      ];
     
 
     const scrollToFooter = () => {
@@ -21,7 +29,8 @@ const DesignforIndia = () => {
                 description="Research Innovation and Incubation Showcase Events (RIISE), the annual flagship event of IIIT Delhi, brings together the brightest minds from academia, industry, and government under a roof, building a platform that transcends boundaries, transforming academic brilliance into tangible impact so as to create Human Centered solutions for India's unique challenges"
                 image="/designforIndia.png"
             />
-            <Speakers />
+            <Speakers speakerData={keynoteData} heading="SPEAKER"/>
+
             <Footer footerRef={footerRef} />
         </div>
     );

@@ -6,8 +6,7 @@ import Footer from "../components/Footer";
 
 const Advancemulticoresystems= () => {
     const footerRef = useRef();
-    
-
+  
     const scrollToFooter = () => {
         footerRef.current.scrollIntoView({ behavior: "smooth" });
     };
@@ -23,7 +22,7 @@ const Advancemulticoresystems= () => {
                 transforming academic brilliance into tangible impact"
                 image="/Advancemulticoresystems.png"
             />
-            <Speakers />
+
             <Footer footerRef={footerRef} />
         </div>
     );

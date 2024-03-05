@@ -6,7 +6,53 @@ import Footer from "../components/Footer";
 
 const Bridgingthoeryandpractice = () => {
     const footerRef = useRef();
-    
+    const speakerData = [
+        {
+          title: "Jaswinder Chadha",
+          body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+          image: "/mrjaswinder.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Jaswinder Chadha",
+          body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+          image: "/mrjaswinder.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Jaswinder Chadha",
+          body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+          image: "/mrjaswinder.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Jaswinder Chadha",
+          body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+          image: "/mrjaswinder.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Jaswinder Chadha",
+          body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+          image: "/mrjaswinder.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Jaswinder Chadha",
+          body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+          image: "/mrjaswinder.png",
+          alt: "jaswinderchadha",
+        },
+        // Add more keynote speakers as needed
+      ];
+      const keynoteData = [
+        {
+          title: "Jaswinder Chadha",
+          body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+          image: "/mrjaswinder.png",
+          alt: "jaswinderchadha",
+        },
+      ];
 
     const scrollToFooter = () => {
         footerRef.current.scrollIntoView({ behavior: "smooth" });
@@ -23,7 +69,6 @@ const Bridgingthoeryandpractice = () => {
                 transforming academic brilliance into tangible impact."
                 image="/Bridgingthoeryandpractice.png"
             />
-            <Speakers />
             <Footer footerRef={footerRef} />
         </div>
     );
