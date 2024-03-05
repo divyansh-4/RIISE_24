@@ -25,9 +25,9 @@ const DesignforIndia = () => {
             <Navbar scrollToFooter={scrollToFooter} />
             <PageHeader
                 title="Design For India"
-                subtitle="Build for India"
-                description="Research Innovation and Incubation Showcase Events (RIISE), the annual flagship event of IIIT Delhi, brings together the brightest minds from academia, industry, and government under a roof, building a platform that transcends boundaries, transforming academic brilliance into tangible impact so as to create Human Centered solutions for India's unique challenges"
-                image="/designforIndia.png"
+                subtitle="Human-centered solutions for India's unique challenges"
+                description=""
+                image="/designforIndian.png"
             />
             <Speakers speakerData={keynoteData} heading="SPEAKER"/>
 

@@ -54,11 +54,8 @@ const Isac = () => {
             <Navbar scrollToFooter={scrollToFooter} />
             <PageHeader
                 title="Integrated Sensing and Communication"
-                subtitle="Build for India"
-                description="Research Innovation and Incubation Showcase Events (RIISE), 
-                the annual flagship event of IIIT Delhi, brings together the brightest minds from academia, 
-                industry, and government under a roof, building a platform that transcends boundaries, 
-                transforming academic brilliance into tangible impact"
+                subtitle="Tackling  spectral congestion for efficient next-gen networks"
+                description=""
                 image="/isac.png"
             />
            <Speakers speakerData={speakerData} heading="SPEAKERS" countRelWidth={[4,4,3,1]}/>

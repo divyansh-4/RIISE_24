@@ -54,8 +54,8 @@ const HealthcarePage = () => {
       <Navbar scrollToFooter={scrollToFooter} />
       <PageHeader
         title="Healthcare"
-        subtitle="Build for India"
-        description="Leveraging technology and tools to build accessible and affordable healthcare solutions for all"
+        subtitle="Leveraging technology and tools to build accessible and affordable healthcare solutions for all"
+        description=""
         image="/healthcare.png"
       />
       <Speakers

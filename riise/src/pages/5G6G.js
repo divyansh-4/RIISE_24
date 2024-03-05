@@ -68,11 +68,8 @@ const _5G6G = () => {
             <Navbar scrollToFooter={scrollToFooter} />
             <PageHeader
                 title="5G/6G"
-                subtitle="Build for India"
-                description="Research Innovation and Incubation Showcase Events (RIISE), 
-                the annual flagship event of IIIT Delhi, brings together the brightest minds from academia, 
-                industry, and government under a roof, building a platform that transcends boundaries, 
-                transforming academic brilliance into tangible impact."
+                subtitle="Powering India's Digital Transformation on web connectivity"
+                description=""
                 image="/5G6G.png"
             />
             

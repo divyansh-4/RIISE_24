@@ -23,11 +23,8 @@ const Sustainablemobility= () => {
             <Navbar scrollToFooter={scrollToFooter} />
             <PageHeader
                 title="Sustainable Mobility"
-                subtitle="Build for India"
-                description="Research Innovation and Incubation Showcase Events (RIISE), 
-                the annual flagship event of IIIT Delhi, brings together the brightest minds from academia, 
-                industry, and government under a roof, building a platform that transcends boundaries, 
-                transforming academic brilliance into tangible impact"
+                subtitle="Building Green, Accessible and Inclusive mobility solutions"
+                description=""
                 image="/Sustainablemobility.png"
             />
             <Speakers speakerData={speakerData} heading="SPEAKERS" />

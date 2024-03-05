@@ -79,11 +79,8 @@ const Perspectives = () => {
             <Navbar scrollToFooter={scrollToFooter} />
             <PageHeader
                 title="Perspectives on time, Modernity and history"
-                subtitle="Build for India"
-                description="Research Innovation and Incubation Showcase Events (RIISE), 
-                the annual flagship event of IIIT Delhi, brings together the brightest minds from academia, 
-                industry, and government under a roof, building a platform that transcends boundaries, 
-                transforming academic brilliance into tangible impact"
+                subtitle="Exploring the interplay of lived experience, clock time, and historical narratives affecting the modern world."
+                description=""
                 image="/history.png"
             />
       <Speakers speakerData={speakerData} heading="SPEAKERS" countRelWidth={[4,4,3,1]}/>
