@@ -12,7 +12,7 @@ const PageHeader = ({ image, title, subtitle, description }) => {
         </div>
         <div
           className="page-header-title"
-          style={title.length >= 15 ? { fontSize: "4rem" } : null}
+          // style={title.length >= 15 ? { fontSize: "4rem" } : null}
         >
           {title}
         </div>
