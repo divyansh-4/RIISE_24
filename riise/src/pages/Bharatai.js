@@ -49,6 +49,24 @@ const Bharatai = () => {
         image: "/Manish_Gupta 1.png",
         alt: "manishgupta",
         },
+      {
+        title: "Mr. Ishan Goel",
+        body: "Associate Director of Data Science at VWO, Author of VWO Stats Blog",
+        image: "/Ishan_Goel 1.png",
+        alt: "Ishan Goel",
+      },
+      {
+        title: "Mr. Shashi Jajware",
+        body: "Principal Data Scientist, QuantumStreetAI",
+        image: "/Shashi_jajwani 1.png",
+        alt: "shashi jajware",
+      },
+      {
+        title: "Prof. Avinash Kumar Agarwal",
+        body: "SBI Endowed Chair Professor of IC Engines, Sustainable Fuels and Emission Control at IITKanpur",
+        image: "/Avinash_kuamr 1.png",
+        alt: "Avinash Kumar",
+      },
         // {
         //   title: "Mr. Shailabh S",
         //   body: "LinkedIn Top Voice",
