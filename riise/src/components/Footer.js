@@ -7,6 +7,7 @@ import iglogo from './ig.jpeg';
 import twitlogo from './X.jpeg';
 import fb from './fb.jpg';
 import linkedin from './linkedin.png';
+import mail from "./mail.jpg"
 // src/components/Footer.js
 
 const Footer = ({ footerRef }) => {
@@ -26,6 +27,7 @@ const Footer = ({ footerRef }) => {
 
           {/* Right side: Social media logos */}
           <div className="right-content">
+            <a href="mailto:riise@iiitd.ac.in"><img src={mail} alt="Mail" className="social-icon" /></a>
             <a href="https://www.instagram.com/riise_iiitd/"><img src={iglogo} alt="Instagram" className="social-icon" /></a>
             <a href="https://twitter.com/IIITDelhi"><img src={twitlogo} alt="Twitter" className="social-icon" /></a>
             <a href="https://www.facebook.com/IIITDelhi/"><img src={fb} alt="Facebook" className="social-icon" /></a>
