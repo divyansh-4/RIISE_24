@@ -22,7 +22,7 @@ const Perspectives = () => {
         {
           title: "Dr. Arun Iyer ",
           body: "HSS,  IIT Bombay",
-          image: "/avatar.jpeg",
+          image: "/iyer.png",
           alt: "ARUN IYER",
         },
         {

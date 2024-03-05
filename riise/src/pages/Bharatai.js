@@ -7,12 +7,12 @@ import Footer from "../components/Footer";
 const Bharatai = () => {
     const footerRef = useRef();
     const speakerData = [
-        {
-          title: "Dr Manohar",
-          body: "Professor at IIIT Delhi",
-          image: "/manohar.png",
-          alt: "jaswinderchadha",
-        },
+        // {
+        //   title: "Dr Manohar",
+        //   body: "Professor at IIIT Delhi",
+        //   image: "/manohar.png",
+        //   alt: "jaswinderchadha",
+        // },
         {
           title: "Mr. Soma Dhaval",
           body: "Director, ML @ Wadhwani AI",
@@ -38,11 +38,23 @@ const Bharatai = () => {
           alt: "jaswinderchadha",
         },
         {
-          title: "Mr. Shailabh S",
-          body: "LinkedIn Top Voice",
-          image: "/shailabh.png",
-          alt: "jaswinderchadha",
+        title: "Dr. Ankur Arora",
+          body: "VP Data science/AI Garage at Mastercard",
+        image: "/Ankur_Arora 1.png",
+        alt: "ankurarora",
         },
+        {
+        title: "Dr. Manish Gupta",
+          body: "Principal Director at Microsoft",
+        image: "/Manish_Gupta 1.png",
+        alt: "manishgupta",
+        },
+        // {
+        //   title: "Mr. Shailabh S",
+        //   body: "LinkedIn Top Voice",
+        //   image: "/shailabh.png",
+        //   alt: "jaswinderchadha",
+        // },
       ];
 
     const scrollToFooter = () => {

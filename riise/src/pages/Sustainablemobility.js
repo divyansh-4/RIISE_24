@@ -9,9 +9,10 @@ const Sustainablemobility= () => {
 
     const speakerData = [
         {
-          title: "Special Commisioner Transport",
-          body: "Delhi Government",
-          
+            title: "IAS Shahzad Alam",
+            body: "Special Commisioner Transport, Delhi Government",
+            image: "/shahzad.png",
+            alt: "ShahzadAlam",
         },
     ];
     
