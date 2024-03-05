@@ -5,6 +5,7 @@ import Speakers from "../components/Speakers";
 import Footer from "../components/Footer";
 import HealthcarePitch from "./components/healthcare/HealthcarePitch";
 import OnCoSlice from "./components/healthcare/Oncoslice";
+import HealthEquityIdeathon from "./components/healthcare/HealthEquityIdeathon";
 import Hackathon from "./components/Hackathon";
 import "./HealthcarePage.css";
 
@@ -154,6 +155,7 @@ const HealthcarePage = () => {
         <HealthcarePitch />
       </div>
       <OnCoSlice />
+      <HealthEquityIdeathon/>
       <Footer footerRef={footerRef} />
     </div>
   );
