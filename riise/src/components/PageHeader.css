@@ -1,32 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
   /* font-family: 'DM Serif Display', serif; */
 .page-header-container{
+    position: relative;
+    padding-bottom: 14rem;
+    background-color: #10884C;
+}
+
+.page-header-img-container{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
-    -webkit-filter: grayscale(0.4);
-    filter: grayscale(0.4);
-}
-
-/* .page-header-filter{
-    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 0;
     left: 0;
-} */
+}
+
+.page-header-img-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
 
 .page-header-body{
-    padding: 40vh 700px 25vh 200px;
+    padding: 30vh 10vw 40vh 10vw;
     text-align: left;
+    position: relative;
 }
 
 .page-header-title{
     font-size: 5rem;
     color: white;
     font-family: "DM Serif Display", serif;
+    position: relative;
 }
 
 .page-header-subtitle{
@@ -34,23 +44,26 @@
     font-family: "Familjen Grotesk";
     margin: 1rem 0rem;
     font-size: 2rem;
+    position: relative;
 }
 
 .page-header-description{
     font-family: "Familjen Grotesk";
     color: #D9EFDE;
     font-size: 1rem;
+    width: 80%;
+    position: relative;
 }
 
 @media screen and (max-width: 1400px) {
     .page-header-body{
-        padding: 200px 500px 200px 300px;
+        padding: 200px 200px 200px 300px;
     }
 }
 
 @media screen and (max-width: 1150px) {
     .page-header-body{
-        padding: 100px 400px 100px 200px;
+        padding: 100px 200px 100px 200px;
     }
 }
 
@@ -67,13 +80,13 @@
         font-size: 0.8rem;
     }
     .page-header-body{
-        padding: 100px 400px 100px 100px;
+        padding: 100px 400px 200px 100px;
     }
 }
 
 @media screen and (max-width: 750px) {
     .page-header-title{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .page-header-subtitle{
         margin: 1rem 0rem;
@@ -84,28 +97,15 @@
         font-size: 0.8rem;
     }
     .page-header-body{
-        padding: 100px 300px 100px 100px;
+        padding: 50px 200px 100px 100px;
+    }
+
+    .page-header-description{
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .page-header-title{
-        font-size: 3rem;
-    }
-    .page-header-subtitle{
-        margin: 1rem 0rem;
-        font-size: 1.3rem;
-    }
-    
-    .page-header-description{
-        font-size: 0.8rem;
-    }
-    .page-header-body{
-        padding: 100px 100px 100px 100px;
-    }
-}
-
-@media screen and (max-width: 500px) {
     .page-header-title{
         font-size: 2.5rem;
     }
@@ -118,6 +118,72 @@
         font-size: 0.8rem;
     }
     .page-header-body{
-        padding: 50px
+        padding: 20vh 100px 30vh 100px;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .page-header-title{
+        font-size: 2rem;
+    }
+    .page-header-subtitle{
+        margin: 1rem 0rem;
+        font-size: 1.3rem;
+    }
+    
+    .page-header-description{
+        font-size: 0.8rem;
+    }   
+}
+
+.page-header-trans{
+    position: absolute;
+    bottom: 0;
+    height: 14rem;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 4rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-header-theme-text{
+    font-style: italic;
+    color: #036132;
+    font-weight: 400;
+    font-family: DM Serif Display;
+    font-size: 1.5rem;
+}
+
+.page-header-build-text{
+    font-weight: 400;
+    font-family: DM Serif Display;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .page-header-theme-text{
+        font-size: 1rem;
+    }
+    
+    .page-header-build-text{
+        font-size: 1.1rem;
+    }
+
+    .page-header-trans{
+        height: 10rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .page-header-container{
+        padding-bottom: 10rem;
+    }
+    
 }

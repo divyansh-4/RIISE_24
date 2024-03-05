@@ -5,8 +5,7 @@
 } */
 
 .theme-container{
-    margin-top: 5rem;
-    
+    margin: 5rem 0;
 }
 
 .theme-container *{
@@ -32,6 +31,7 @@
 
 .section-heading {
     color: black;
+    margin-bottom: 2.5rem;
 }
 
 

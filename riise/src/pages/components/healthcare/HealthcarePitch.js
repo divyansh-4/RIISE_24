@@ -12,7 +12,9 @@ const HealthcarePitch = () => {
       <SubTitle>BUILD FOR INDIA</SubTitle>
       <MainTitle>EVENTS</MainTitle>
       <SpaceDivider />
-      <MainTitle>HEALTHTECH INNOVATION PITCH</MainTitle>
+      <MainTitle style={{ fontFamily: "DM sarif display" }}>
+        HEALTHTECH INNOVATION PITCH
+      </MainTitle>
       <SpaceDivider />
 
       <div className="healthcare-pitch-about-wrapper">

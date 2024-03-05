@@ -1,5 +1,9 @@
 /* src/components/Schedule.css */
 
+#schedule-section{
+  margin-top: 5rem;
+}
+
 .events {
   display: flex;
   justify-content: center;

@@ -57,25 +57,34 @@ const RowOverflow = ({ children, countRelWidth, center = false }) => {
       className="rowoverflow-container"
       style={{ gridTemplateColumns: `repeat(${rowCount}, 1fr)` }}
     >
-      {center && childCount < rowCount
+      {/* {center && childCount < rowCount
         ? Array(Math.floor((rowCount - childCount) / 2))
             .fill(0)
             .map((val, index) => <div></div>)
-        : null}
+        : null} */}
       {Array.isArray(children) ? (
         children.map((child, index) => (
-          <div key={index} className={`rowoverflow-item`}>
+          <div
+            key={index}
+            className={`rowoverflow-item`}
+            style={{ flexBasis: `${100 / rowCount}%` }}
+          >
             {child}
           </div>
         ))
       ) : (
-        <div className={`rowoverflow-item`}>{children}</div>
+        <div
+          className={`rowoverflow-item`}
+          style={{ flexBasis: `${100 / rowCount}%` }}
+        >
+          {children}
+        </div>
       )}
-      {center && childCount < rowCount
+      {/* {center && childCount < rowCount
         ? Array(Math.floor((rowCount - childCount) / 2))
             .fill(0)
             .map((val, index) => <div></div>)
-        : null}
+        : null} */}
     </div>
   );
 };

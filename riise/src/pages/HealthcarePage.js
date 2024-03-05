@@ -55,17 +55,25 @@ const HealthcarePage = () => {
       <PageHeader
         title="Healthcare"
         subtitle="Build for India"
-        description="Research Innovation and Incubation Showcase Events (RIISE), the annual flagship event of IIIT Delhi, brings together the brightest minds from academia, industry, and government under a roof, building a platform that transcends boundaries, transforming academic brilliance into tangible impact to leverage technology and tools to build accessible and affordable healthcare"
+        description="Leveraging technology and tools to build accessible and affordable healthcare solutions for all"
         image="/healthcare.png"
       />
-      <Speakers speakerData={keynoteData} heading="KEYNOTE TALK"/>
-      <Speakers speakerData={speakerData} heading="SPEAKERS" countRelWidth={[4,4,3,1]}/>
-     
+      <Speakers
+        speakerData={keynoteData}
+        heading="KEYNOTE TALK"
+        countRelWidth={[4, 4, 3, 1]}
+      />
+      <Speakers
+        speakerData={speakerData}
+        heading="SPEAKERS"
+        countRelWidth={[4, 4, 3, 1]}
+      />
+
       <div style={{ padding: "0 4rem" }}>
         <HealthcarePitch />
       </div>
       <OnCoSlice />
-      <HealthEquityIdeathon/>
+      <HealthEquityIdeathon />
       <Footer footerRef={footerRef} />
     </div>
   );
