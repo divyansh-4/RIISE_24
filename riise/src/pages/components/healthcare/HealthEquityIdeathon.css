@@ -96,7 +96,7 @@ h1 {
 }
 
 .application-process a {
-    color: blue;
+    /* color: blue; */
     text-decoration: none;
     font-weight: bold;
 }
