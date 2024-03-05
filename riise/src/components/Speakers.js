@@ -1,68 +1,30 @@
 import React from "react";
-import "./Themes.css";
-import "./Speakers.css";
-import image1 from "./Design for india.png";
-import image2 from "./Robotics and space technology.png";
-import image3 from "./Bridging Theory and Practice.png";
-import image4 from "./Computational Gastronomy.png";
-import image5 from "./Sustainable Mobility.png";
-import image6 from "./5G-6G.png";
-import image7 from "./Advanced Multicore System.png";
+import "./Keynote.css";
 import Card from "../containers/Card";
-import RowContainer from "../containers/RowContainer";
+import RowOverflow from "../containers/RowOverflow";
 
-const Speakers = () => {
+const Speaker = ({speakerData,heading,countRelWidth=[5,5,3,3,1] }) => {
   return (
-    <div className="theme-container">
-      {/* <h2 className="theme-heading">EVENTS</h2>
-      <h1 className="section-heading">SPEAKERS</h1>
-      <h1 className="temp-soon">COMING SOON</h1> */}
-      {/* <RowContainer scroll={true} speed={7}>
-        <Card
-          title="Design for India"
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
-          image={image1}
-          alt="India"
-        />
-        <Card
-          title="Robotics and space technology"
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
-          image={image2}
-          alt="India"
-        />
-        <Card
-          title="Bridging theory and practice"
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
-          image={image3}
-          alt="India"
-        />
-        <Card
-          title="Computational gastronomy"
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
-          image={image4}
-          alt="India"
-        />
-        <Card
-          title="Sustainable mobility"
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
-          image={image5}
-          alt="India"
-        />
-        <Card
-          title="5G/6G "
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
-          image={image6}
-          alt="India"
-        />
-        <Card
-          title="Advanced multicore systems"
-          body="orem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet lorem ipsum dolor imet"
-          image={image7}
-          alt="India"
-        />
-      </RowContainer> */}
+    <div className="keynote-container">
+      {/* <h2 className="theme-heading2">EVENTS</h2> */}
+      <h1 className="section-heading2">{heading}</h1>
+      <br/>
+      <div className="keynote-card-row-container">
+        <RowOverflow center={true} countRelWidth={countRelWidth}>
+          {speakerData.map((speaker, index) => (
+            <Card
+              key={index}
+              title={speaker.title}
+              body={speaker.body}
+              image={speaker.image}
+              alt={speaker.alt}
+              hover={false}
+            />
+          ))}
+        </RowOverflow>
+      </div>
     </div>
   );
 };
 
-export default Speakers;
+export default Speaker;

@@ -24,13 +24,22 @@ const App = () => {
   const scrollToKeynote = () => {
     KeynoteRef.current.scrollIntoView({ behavior: "smooth" });
   };
+  const keynoteData = [
+    {
+      title: "Jaswinder Chadha",
+      body: "President & CEO @ Axtria | AI Software for Life Science Industry",
+      image: "/mrjaswinder.png",
+      alt: "jaswinderchadha",
+    },
+    // Add more keynote speakers as needed
+  ];
   return (
     <div>
       <Navbar scrollToSchedule={scrollToSchedule} scrollToFooter={scrollToFooter} scrollToKeynote={scrollToKeynote}/>
       <Header />
       <About />
       <ThemePage />
-      <Keynote KeynoteRef={KeynoteRef}/>
+      <Keynote KeynoteRef={KeynoteRef} keynoteData={keynoteData} />
       <Schedule ScheduleRef={ScheduleRef}/>
       <Footer footerRef={footerRef} />
     </div>
