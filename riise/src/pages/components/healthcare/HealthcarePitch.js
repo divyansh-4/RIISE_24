@@ -1,5 +1,6 @@
 import { SubTitle, MainTitle } from "../PageTitles";
 import { InfoCard1, InfoCard2 } from "../InfoCards";
+import { Link } from "react-router-dom";
 import "./HealthcarePitch.css";
 
 const SpaceDivider = () => {
@@ -148,10 +149,14 @@ const HealthcarePitch = () => {
             </li>
           </ol>
           <div>
-            <span>Application Form: </span>
-            <a href="https://forms.gle/rQgrVropWguPgXSA9" target="_blank">
+            {/* <span>Application Form: </span> */}
+            {/* <a href="https://forms.gle/rQgrVropWguPgXSA9" target="_blank">
               https://forms.gle/rQgrVropWguPgXSA9
-            </a>
+            </a> */}
+            <br></br>
+            <Link to="https://forms.gle/rQgrVropWguPgXSA9" className="register-button2">
+              Application Form
+            </Link>
           </div>
         </div>
         <InfoCard1 classname="healthcare-pitch-date-box">

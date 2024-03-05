@@ -58,6 +58,26 @@
     font-weight: 400;
     text-align: justify;
 }
+.register-button2 {
+    font-weight: 600;
+    /* Adjusted font weight */
+    font-size: 1.2vw;
+    /* Adjusted font size */
+    line-height: 150%;
+    font-family: Lato;
+    display: flex;
+    padding: 0.8vw 2vw;
+    /* Adjusted padding for responsive scaling */
+    justify-content: center;
+    align-items: center;
+    gap: 0.8vw;
+    /* Adjusted gap for responsive scaling */
+    border-radius: 50px;
+    border: 1px solid #061600;
+    background: green;
+    color: #FFF;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 1500px) {
     .healthcare-pitch-about{

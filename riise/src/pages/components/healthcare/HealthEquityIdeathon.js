@@ -1,5 +1,6 @@
 import React from "react";
 import "./HealthEquityIdeathon.css";
+import { Link } from "react-router-dom";
 
 const HealthEquityIdeathon = () => {
     return (
@@ -43,7 +44,10 @@ const HealthEquityIdeathon = () => {
                             4. Submit Your Proposal: Complete the Google Form by March 10th, 2024, to officially enter the competition.<br/>
                         </p>
                         <p>
-                            Application Form : <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZPf55TtGx8BbTKrtqoRAjGEKxU2TXQ7lb2rBESxiq9uolcw/viewform">Google Form Link</a>
+                            {/* Application Form : <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZPf55TtGx8BbTKrtqoRAjGEKxU2TXQ7lb2rBESxiq9uolcw/viewform">Google Form Link</a> */}
+                            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeZPf55TtGx8BbTKrtqoRAjGEKxU2TXQ7lb2rBESxiq9uolcw/viewform" className="register-button2">
+                                Application Form
+                            </Link>
                         </p>
                     </div>
                     <div className="important-dates">

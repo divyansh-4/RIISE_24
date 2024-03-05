@@ -1,5 +1,6 @@
 // import image from '../images/Cells.jpg';
 import "./Oncoslice.css";
+import { Link } from "react-router-dom";
 
 const OnCoSlice = () => {
   return (
@@ -42,6 +43,7 @@ const OnCoSlice = () => {
         <div className="s-text">
           <h3>Organizers:</h3>
           <br></br>
+          <li>Prof. Ritu Gupta, BRA-IRCH, Laboratory Oncology Unit, All India Institute of Medical Sciences, New Delhi</li>
           <li>Prof. Anubha Gupta, Centre of Excellence in Healthcare</li>
           <li>Dr. Jaspreet Kaur, Centre of Excellence in Healthcare</li>
           <br></br>
@@ -85,10 +87,13 @@ const OnCoSlice = () => {
           </p>
           <br></br>
           <p>
-            <span>Application Form:</span>
+            {/* <span>Application Form:</span>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZaT76uqYmGERq3SvsYqRq8gpLFx_fxcLEt0nLSctei9KW-w/viewform">
               Register Here
-            </a>
+            </a> */}
+            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfZaT76uqYmGERq3SvsYqRq8gpLFx_fxcLEt0nLSctei9KW-w/viewform" className="register-button2">
+              Application Form
+            </Link>
           </p>
         </div>
       </div>
