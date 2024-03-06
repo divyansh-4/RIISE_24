@@ -41,13 +41,7 @@ const HealthEquityIdeathon = () => {
                             1. Form a Team: Gather a diverse team of thinkers, doers, and dreamers. Collaboration fuels creativity!<br/>
                             2. Brainstorm: Dive deep into the problem statement. Explore unconventional ideas and approaches.<br/>
                             3. Develop Your Idea: Transform your vision into a tangible perspective. Leverage interdisciplinary domain knowledge to create an impactful notion in the healthcare domain.<br/>
-                            4. Submit Your Proposal: Complete the Google Form by March 10th, 2024, to officially enter the competition.<br/>
-                        </p>
-                        <p>
-                            {/* Application Form : <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZPf55TtGx8BbTKrtqoRAjGEKxU2TXQ7lb2rBESxiq9uolcw/viewform">Google Form Link</a> */}
-                            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeZPf55TtGx8BbTKrtqoRAjGEKxU2TXQ7lb2rBESxiq9uolcw/viewform" className="register-button2">
-                                Application Form
-                            </Link>
+                            4. Submit Your Proposal: Complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZPf55TtGx8BbTKrtqoRAjGEKxU2TXQ7lb2rBESxiq9uolcw/viewform">Google Form</a> by March 10th, 2024, to officially enter the competition.<br/>
                         </p>
                     </div>
                     <div className="important-dates">
