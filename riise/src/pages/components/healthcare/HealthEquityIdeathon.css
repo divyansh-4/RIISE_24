@@ -11,15 +11,15 @@
 h1 {
     font-size: 42.16px;
     color: black;
-    font-family: 'Lato', serif;
+    font-family: 'DM Serif Display', serif;
     text-align: center;
 }
 
-.content{
+.content {
     font-size: 21.08px;
     color: #036132;
     text-align: center;
-    font-family: 'Lato', serif;
+    font-family: 'DM Serif Display', serif;
 }
 
 .health-equity-container {
@@ -35,16 +35,12 @@ h1 {
 }
 
 .rectangle-content {
-    font-family: 'Lato', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0px;
     text-align: justify;
-}
-
-.flex-container {
-    display: flex;
 }
 
 .left-box {
@@ -68,7 +64,7 @@ h1 {
 
 .left-box-rectangle-content {
     flex: 1;
-    font-family: 'Lato', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 22px;
@@ -77,74 +73,74 @@ h1 {
     padding: 20px;
 }
 
-.application-process {
+.flex-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the flex container */
+}
+
+.right-box {
     flex: 1; /* Take up remaining space */
+    display: flex; /* Use flexbox for inner content */
+    flex-direction: column; /* Set column layout */
+    margin-left: 10px; /* Adjust margin to match left box */
+}
+
+.application-process {
     padding: 20px; /* Add padding for spacing */
 }
 
 .application-process h2 {
     font-size: 28px;
     color: black;
-    font-family: 'Lato', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 10px;
 }
 
 .application-process p {
     font-size: 18px;
     color: black;
-    font-family: 'Lato', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.application-process a {
-    /* color: blue; */
+.google-form-button {
+    display: block;
+    width: 100%; /* Set button width to 100% */
+    max-width: 300px; /* Set max width for the button */
+    margin: 20px auto 0; /* Adjust top margin */
+    padding: 10px 20px;
+    background-color: #10884c; /* Green color */
+    color: #fff;
+    text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.google-form-button:hover {
+    background-color: #0e6a3f;
 }
 
 .important-dates {
-    flex: 1; /* Take up remaining space */
-    display: flex; /* Use flexbox for inner content */
-    flex-direction: column; /* Set column layout */
-    margin-right: 70px; /* Adjust margin to match left box */
+    margin-top: auto; /* Push to the bottom */
     background-color: #10884c; /* Green color */
     color: #FFFFFF; /* White text color */
     padding: 20px; /* Add padding for spacing */
     border-radius: 20px; /* Add rounded corners */
-    margin-top: 10px; /* Add margin from application process box */
-    height: calc(50% - 30px); /* Adjust height to cover half the remaining space */
     overflow-y: auto; /* Add vertical scrollbar if content overflows */
 }
 
 .important-dates h4 {
     text-align: center; /* Center-align the heading */
-    font-family: 'Lato', serif;
+    font-family: 'DM Serif Display', serif;
+    margin-top: 0; /* Remove default margin */
 }
 
 .important-dates p {
     font-size: 18px;
     color: #FFFFFF;
-    font-family: 'Lato', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 10px 0; /* Add margin to separate paragraphs */
-}
-.register-button2 {
-    font-weight: 400;
-    /* Adjusted font weight */
-    font-size: 1.2vw;
-    /* Adjusted font size */
-    line-height: 100%;
-    font-family: 'Lato';
-    display: flex;
-    padding: 0.4vw 1vw;
-    /* Adjusted padding for responsive scaling */
-    justify-content: center;
-    align-items: center;
-    gap: 0.8vw;
-    /* Adjusted gap for responsive scaling */
-    border-radius: 50px;
-    border: 1px solid #061600;
-    background: green;
-    color: #FFF;
-    text-decoration: none;
 }
 
 /* Additional styles for responsiveness */
@@ -153,7 +149,9 @@ h1 {
         flex-direction: column;
     }
 
-    .left-box, .application-process, .important-dates {
+    .left-box,
+    .application-process,
+    .important-dates {
         width: 100%;
         margin-bottom: 20px; /* Add space between elements */
     }
