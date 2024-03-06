@@ -11,7 +11,7 @@
 h1 {
     font-size: 42.16px;
     color: black;
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Lato', serif;
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ h1 {
     font-size: 21.08px;
     color: #036132;
     text-align: center;
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Lato', serif;
 }
 
 .health-equity-container {
@@ -35,7 +35,7 @@ h1 {
 }
 
 .rectangle-content {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lato', Times, serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 22px;
@@ -68,7 +68,7 @@ h1 {
 
 .left-box-rectangle-content {
     flex: 1;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lato', Times, serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 22px;
@@ -85,14 +85,14 @@ h1 {
 .application-process h2 {
     font-size: 28px;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lato', Times, serif;
     margin-bottom: 10px;
 }
 
 .application-process p {
     font-size: 18px;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lato', Times, serif;
 }
 
 .application-process a {
@@ -117,13 +117,13 @@ h1 {
 
 .important-dates h4 {
     text-align: center; /* Center-align the heading */
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Lato', serif;
 }
 
 .important-dates p {
     font-size: 18px;
     color: #FFFFFF;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lato', Times, serif;
     margin: 10px 0; /* Add margin to separate paragraphs */
 }
 .register-button2 {
@@ -132,7 +132,7 @@ h1 {
     font-size: 1.2vw;
     /* Adjusted font size */
     line-height: 100%;
-    font-family: Lato;
+    font-family: 'Lato';
     display: flex;
     padding: 0.4vw 1vw;
     /* Adjusted padding for responsive scaling */

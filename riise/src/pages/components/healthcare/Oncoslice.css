@@ -22,7 +22,7 @@ body{
     width: 100%;
     font-size: 42px;
     margin-top:10%;
-    font-family: DM sarif display;
+    font-family: 'Lato';
 }
 .second-heading{
     display: flex;
@@ -30,7 +30,7 @@ body{
     align-items: center;
     width: 100%;
     color: darkgreen;
-    font-family: DM sarif display;
+    font-family: 'Lato';
 }
 
 .first-section {
@@ -147,7 +147,7 @@ a{
     align-items: center;
     font-weight: bold;
     margin-bottom: 5%;
-    font-family: DM sarif display;
+    font-family: 'Lato';
 }
 .boxes {
   display: flex;
@@ -183,7 +183,7 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:DM sarif display;
+  font-family: 'Lato';
 }
 /* .text-margin{
     margin-top: 5%;
@@ -214,7 +214,7 @@ a{
   font-size: 1.2vw;
   /* Adjusted font size */
   line-height: 150%;
-  font-family: Lato;
+  font-family: 'Lato';
   display: flex;
   padding: 0.8vw 2vw;
   /* Adjusted padding for responsive scaling */

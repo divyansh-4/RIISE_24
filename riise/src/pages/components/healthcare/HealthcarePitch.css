@@ -14,7 +14,7 @@
     text-align: justify;
     line-height: 1.8em;
     font-size: 1em;
-    font-family: 'lato', sans-serif;
+    font-family: 'Lato';
     font-weight: 300;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .healthcare-pitch-participate-ul{
-    font-family: 'lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.5em;
     margin: auto;
     width: 85%;
@@ -120,7 +120,7 @@
 }
 
 .healthcare-pitch-process-instructions{
-    font-family: 'lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.5em;
 }
 
@@ -141,7 +141,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    font-family: 'lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 500;
     flex-grow: 1;
     flex-shrink: 1;
@@ -160,6 +160,6 @@
 }
 
 .healthcare-pitch-outcome{
-    font-family: 'lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.5em;
 }
