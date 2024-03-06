@@ -1,6 +1,5 @@
 import React from "react";
 import "./HealthEquityIdeathon.css";
-import { Link } from "react-router-dom";
 
 const HealthEquityIdeathon = () => {
     return (
