@@ -9,7 +9,7 @@ const Isac = () => {
     const speakerData = [
         {
           title: " Prof. Sumit Darak",
-          body: "Assoc. Prof. and Dean of Academic Affairs at IIIT Delhi",
+          body: "Assoc. Professor and Dean of Academic Affairs,  IIIT Delhi",
           image: "/image 42.png",
             alt: "jaswinderchadha",
       },

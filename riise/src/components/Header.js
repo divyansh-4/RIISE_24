@@ -12,11 +12,15 @@ const Header = () => {
         <div className="heading-container" >
           <p className="header-heading">RIISE</p>
           <p className="subheading">IIIT Delhi’s Annual Research Expo </p>
-          <p className="description">Research Innovation and Incubation Showcase (RIISE), 
+          <br />
+          <p className="subheading">15-16 March, 2024 </p>
+          <br></br>
+          <br />
+          {/* <p className="description">Research Innovation and Incubation Showcase (RIISE), 
                                     the annual<br></br> flagship event of IIIT Delhi, brings together the brightest 
                                     minds from <br></br> academia, industry, and government under a roof, building a 
                                     platform that <br></br>  transcends boundaries, transforming academic brilliance into 
-                                    tangible impact.</p>
+                                    tangible impact.</p> */}
           
             <div className='button-row'>
             <Link style={{ textDecoration: 'none' }} to="https://docs.google.com/forms/d/e/1FAIpQLSd9CcVMj2jj9REtWkVmSXNwv6zVc2sw4DLEZGzZstuJQtEKjw/viewform?usp=sf_link">

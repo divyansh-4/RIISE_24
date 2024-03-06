@@ -15,7 +15,8 @@ const Schedule = ({ScheduleRef}) => {
       {/* <div>
         <img src={"schedule.svg"}  className="image" />
       </div> */}
-      <img src={"schedule.svg"}  className="image" />
+      {/* <img src={"schedule.svg"}  className="image" /> */}
+      <img src={"schdeule2.svg"} className="image" />
     </div>
   );
 }
