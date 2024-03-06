@@ -8,7 +8,7 @@ const Roboticsandspace = () => {
     const footerRef = useRef();
     const speakerData = [
         {
-          title: "Prof.Puneet Singla",
+          title: "Prof. Puneet Singla",
           body: "Professor of Aerospace Engineering at Penn State University",
           image: "/puneet.png",
           alt: "jaswinderchadha",

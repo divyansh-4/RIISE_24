@@ -166,10 +166,10 @@ const HealthcarePitch = () => {
           <div className="healthcare-pitch-date-box-body">
             <div>
               <div className="healthcare-pitch-date">
-                <div>Application Start date: </div> <div>Feb 22, 2024</div>
+                <div>Application Start Date: </div> <div>Feb 22, 2024</div>
               </div>
               <div className="healthcare-pitch-date">
-                <div>Application Close date: </div> <div>March 4, 2024</div>
+                <div>Application Close Date: </div> <div>March 4, 2024</div>
               </div>
               <div className="healthcare-pitch-date">
                 <div>Shortlisting: </div> <div>March 9, 2024</div>

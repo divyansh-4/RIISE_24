@@ -15,7 +15,7 @@ const Isac = () => {
       },
       {
         title: "Dr. Shobha Sundar",
-        body: "Associate Professor, ECE Department, IIIT Delhi",
+        body: "Assoc. Professor, ECE Department and Dean of Student Affairs, IIIT Delhi",
         image: "/image 47.png",
         alt: "jaswinderchadha",
       },

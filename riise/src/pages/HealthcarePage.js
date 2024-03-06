@@ -17,25 +17,25 @@ const HealthcarePage = () => {
   };
   const speakerData = [
     {
-      title: "Dr Ramesh Venkatesan",
+      title: "Dr. Ramesh Venkatesan",
       body: "Senior Director,    Wipro GE Healthcare",
       image: "/ramesh.png",
     },
     {
-      title: "Dr Rupesh Chaturvedi",
-      body: "Prof JNU",
+      title: "Dr. Rupesh Chaturvedi",
+      body: "Professor, JNU",
       image: "/chatur.png",
       alt: "jaswinderchadha",
     },
     {
-      title: "Dr Kshitij Jadhav",
+      title: "Dr. Kshitij Jadhav",
       body: "Assistant Professor, Koita Centre for Digital Health, IIT Bombay",
       image: "/Jadhav.png",
       alt: "jaswinderchadha",
     },
     {
-      title: "Dr Neetu Singh",
-      body: "Assistant Professor,Center for Biomedical Engineering,IIT Delhi",
+      title: "Dr. Neetu Singh",
+      body: "Assistant Professor, Center for Biomedical Engineering, IIT Delhi",
       image: "/neetusingh.png",
       alt: "jaswinderchadha",
     },
@@ -43,7 +43,7 @@ const HealthcarePage = () => {
   ];
   const keynoteData = [
     {
-      title: "Mr Dileep Mangsuli",
+      title: "Mr. Dileep Mangsuli",
       body: "Executive Director at Siemens Healthineers",
       image: "/dilipman.png",
       alt: "Dileep Mangsuli",

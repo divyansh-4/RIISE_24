@@ -184,7 +184,7 @@ const OnCoSlice = () => {
         <div className="lastline">
           <p>
             {" "}
-            For any further information, you can contact us using <a href="https://riise@iiitd.ac.in/">RIISE</a> email
+            For any further information, you can contact us using <a href="mailto:riise@iiitd.ac.in">RIISE</a> email
             id.
           </p>
         </div>
