@@ -14,21 +14,19 @@
     margin-top: 2rem;
 }
 
-.paragraph {
-    text-align: center;
-}
-  
-.phase-heading {
-    color: green;
-    font-style: italic;
-}
-  
-.date-range {
-    color: white;
-    font-style: normal;
+
+.healthcare-events-body{
+    padding: 0 4rem;
 }
 
-.paragraph-content{
-    text-align: left;
-    color: white;
+@media screen and (max-width: 800px) {
+    .healthcare-events-body{
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .healthcare-events-body{
+        padding: 0 2rem;
+    }
 }

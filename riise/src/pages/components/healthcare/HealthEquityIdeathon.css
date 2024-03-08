@@ -1,158 +1,80 @@
-.body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+.healthequity-component{
+    font-size: 1rem;
 }
 
-.container {
-    text-align: center;
+.healthequity-about-wrapper{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    gap: 2em;
+    font-family: 'Lato', sans-serif;
 }
 
-h1 {
-    font-size: 42.16px;
-    color: black;
-    font-family: 'DM Serif Display', serif;
-    text-align: center;
-}
-
-.content {
-    font-size: 21.08px;
-    color: #036132;
-    text-align: center;
-    font-family: 'DM Serif Display', serif;
-}
-
-.health-equity-container {
-    margin-top: 150px;
-}
-
-.green-rectangle {
-    width: 90%;
-    background-color: #e3ffe7; /* Green color */
-    padding: 20px; /* Add padding for spacing */
-    margin: 50px auto; /* Center the rectangle horizontally */
-    border-radius: 20px; /* Add rounded corners */
-}
-
-.rectangle-content {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0px;
-    text-align: justify;
-}
-
-.left-box {
-    flex: 0 0 30%; /* Set the initial width to 30% and don't allow it to grow or shrink */
-    background-color: #10884c; /* Green color */
-    color: #FFFFFF; /* White text color */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 20px; /* Add rounded corners */
-    margin-right: 10px; /* Add margin between boxes */
-    margin-left: 70px; /* Set left margin */
-    height: calc(100% - 40px); /* Decrease height to accommodate padding */
-    overflow-y: auto; /* Add vertical scrollbar if content overflows */
-    display: flex; /* Use flexbox for inner content */
-    flex-direction: column; /* Set column layout */
-    margin-bottom: 20px;
-}
-
-.left-box-heading {
-    text-align: center;
-}
-
-.left-box-rectangle-content {
-    flex: 1;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0px;
-    text-align: justify;
-    padding: 20px;
-}
-
-.flex-container {
+.healthequity-about-participate{
     display: flex;
-    align-items: flex-start; /* Align items at the start of the flex container */
+    flex-direction: column;   
 }
 
-.right-box {
-    flex: 1; /* Take up remaining space */
-    display: flex; /* Use flexbox for inner content */
-    flex-direction: column; /* Set column layout */
-    margin-left: 10px; /* Adjust margin to match left box */
-}
-
-.application-process {
-    padding: 20px; /* Add padding for spacing */
-}
-
-.application-process h2 {
-    font-size: 28px;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 10px;
-}
-
-.application-process p {
-    font-size: 18px;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.google-form-button {
-    display: block;
-    width: 100%; /* Set button width to 100% */
-    max-width: 300px; /* Set max width for the button */
-    margin: 20px auto 0; /* Adjust top margin */
-    padding: 10px 20px;
-    background-color: #10884c; /* Green color */
-    color: #fff;
+.healthequity-about-info-header{
     text-align: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.healthequity-about-participate-text{
+    text-align: justify;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.healthequity-about-date-card>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25em;
+}
+
+.healthequity-register-btn{
+    font-weight: 600;
+    /* Adjusted font weight */
+    /* Adjusted font size */
+    line-height: 150%;
+    font-family: Lato;
+    display: flex;
+    padding: 0.8vw 2vw;
+    /* Adjusted padding for responsive scaling */
+    justify-content: center;
+    align-items: center;
+    gap: 0.8vw;
+    /* Adjusted gap for responsive scaling */
+    border-radius: 50px;
+    border: 1px solid #061600;
+    background: #10884C;
+    color: #FFF;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+    margin-top: 1em;
 }
 
-.google-form-button:hover {
-    background-color: #0e6a3f;
-}
-
-.important-dates {
-    margin-top: auto; /* Push to the bottom */
-    background-color: #10884c; /* Green color */
-    color: #FFFFFF; /* White text color */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 20px; /* Add rounded corners */
-    overflow-y: auto; /* Add vertical scrollbar if content overflows */
-}
-
-.important-dates h4 {
-    text-align: center; /* Center-align the heading */
-    font-family: 'DM Serif Display', serif;
-    margin-top: 0; /* Remove default margin */
-}
-
-.important-dates p {
-    font-size: 18px;
-    color: #FFFFFF;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 10px 0; /* Add margin to separate paragraphs */
-}
-
-/* Additional styles for responsiveness */
-@media (max-width: 768px) {
-    .flex-container {
-        flex-direction: column;
+@media screen and (max-width: 1500px) {
+    .healthequity-component{
+        font-size: 0.9rem;
     }
+}
+  
+@media screen and (max-width: 1300px) {
+    .healthequity-component{
+        font-size: 0.8rem;
+    }
+}
 
-    .left-box,
-    .application-process,
-    .important-dates {
-        width: 100%;
-        margin-bottom: 20px; /* Add space between elements */
+
+
+@media screen and (max-width: 1000px) {
+    .healthequity-about-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .healthequity-component{
+        font-size: 0.6em;
     }
 }

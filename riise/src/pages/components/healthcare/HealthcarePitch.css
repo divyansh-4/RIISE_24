@@ -58,10 +58,9 @@
     font-weight: 400;
     text-align: justify;
 }
-.register-button2 {
+.healthcare-pitch-register-button2 {
     font-weight: 600;
     /* Adjusted font weight */
-    font-size: 1.2vw;
     /* Adjusted font size */
     line-height: 150%;
     font-family: Lato;
@@ -74,7 +73,7 @@
     /* Adjusted gap for responsive scaling */
     border-radius: 50px;
     border: 1px solid #061600;
-    background: green;
+    background: #10884C;
     color: #FFF;
     text-decoration: none;
 }

@@ -10,12 +10,9 @@ const SpaceDivider = () => {
 const HealthcarePitch = () => {
   return (
     <div className="healthcare-pitch-body">
-      <SubTitle>BUILD FOR INDIA</SubTitle>
       <MainTitle>EVENTS</MainTitle>
       <SpaceDivider />
-      <MainTitle style={{ fontFamily: "DM sarif display" }}>
-        HEALTHTECH INNOVATION PITCH
-      </MainTitle>
+      <MainTitle>HEALTHTECH INNOVATION PITCH</MainTitle>
       <SpaceDivider />
 
       <div className="healthcare-pitch-about-wrapper">
@@ -154,7 +151,11 @@ const HealthcarePitch = () => {
               https://forms.gle/rQgrVropWguPgXSA9
             </a> */}
             <br></br>
-            <Link to="https://forms.gle/rQgrVropWguPgXSA9" className="register-button2">
+            <Link
+              to="https://forms.gle/rQgrVropWguPgXSA9"
+              className="healthcare-pitch-register-button2"
+              target="_blank"
+            >
               Application Form
             </Link>
           </div>
@@ -169,10 +170,10 @@ const HealthcarePitch = () => {
                 <div>Application Start Date: </div> <div>Feb 22, 2024</div>
               </div>
               <div className="healthcare-pitch-date">
-                <div>Application Close Date: </div> <div>March 4, 2024</div>
+                <div>Application Close Date: </div> <div>March 10, 2024</div>
               </div>
               <div className="healthcare-pitch-date">
-                <div>Shortlisting: </div> <div>March 9, 2024</div>
+                <div>Shortlisting: </div> <div>March 12, 2024</div>
               </div>
               <div className="healthcare-pitch-date">
                 <div>Pitch Competition Date: </div> <div>March 16, 2024</div>

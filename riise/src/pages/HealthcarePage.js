@@ -15,6 +15,44 @@ const HealthcarePage = () => {
   const scrollToFooter = () => {
     footerRef.current.scrollIntoView({ behavior: "smooth" });
   };
+  const panelistData = [
+    {
+      title: "Dr. Sandeep Budhiraja",
+      body: "Senior Medical Director, Max Group",
+      image: "/drsandeep.png",
+      alt: "dr.sandeepbudhiraja",
+    },
+    {
+      title: "Dr. Vinitaa Jha",
+      body: "Executive Vice President - Research & Academics at Max Healthcare",
+      image: "/drvinitaa.png",
+      alt: "drvinitaaajha",
+    },
+    {
+      title: "Dr. Harit Kumar Chaturved",
+      body: "Chairperson of Max Institute of Cancer Care",
+      image: "/drharit.png",
+      alt: "drharitchaturved",
+    },
+    {
+      title: "Dr. Bharat Aggarwa",
+      body: "Prinicpal Director, Radiology Services, Max Healthcare",
+      image: "/drbharat.png",
+      alt: "drbharataggarwa",
+    },
+    {
+      title: "Dr. Atul Thatai",
+      body: "Director, Molecular Diagnostics and Cytogenomics at Max Healthcare",
+      image: "/dratul.png",
+      alt: "dratulthatai",
+    },
+    {
+      title: "Mr. Prashant Singh",
+      body: "Director & Chief Information Officer Max Healthcare Institute Ltd",
+      image: "/mrprashant.png",
+      alt: "mrprashantsingh",
+    },
+  ];
   const speakerData = [
     {
       title: "Dr. Ramesh Venkatesan",
@@ -68,12 +106,17 @@ const HealthcarePage = () => {
         heading="SPEAKERS"
         countRelWidth={[4, 4, 3, 1]}
       />
+      <Speakers
+        speakerData={panelistData}
+        heading="PANELISTS"
+        countRelWidth={[4, 4, 3, 1]}
+      />
 
-      <div style={{ padding: "0 4rem" }}>
+      <div className="healthcare-events-body">
         <HealthcarePitch />
+        <OnCoSlice />
+        <HealthEquityIdeathon />
       </div>
-      <OnCoSlice />
-      <HealthEquityIdeathon />
       <Footer footerRef={footerRef} />
     </div>
   );

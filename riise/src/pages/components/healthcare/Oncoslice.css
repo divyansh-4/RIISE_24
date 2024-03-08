@@ -1,220 +1,69 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.oncoslice-body{
+  font-size: 1rem;
+  margin-top: 5rem;
 }
 
-
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+.oncoslice-about-wrapper{
+  display: flex;
 }
-.main{
+
+.oncoslice-about{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 65%;
+  text-align: justify;
+  line-height: 1.8em;
+  font-size: 1em;
+  font-family: 'Lato';
+  font-weight: 300;
+}
+
+.oncoslice-about-sidebar{
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-left: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.oncoslice-participate-ul{
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5em;
+  margin: auto;
+  width: 85%;
+  padding: 1em 0 2em 0;
+}
+
+.oncoslice-categories{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+}
+
+.oncoslice-category-box{
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  padding: 0 5%;
-}
-.top-heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 42px;
-    margin-top:10%;
-    font-family: 'Lato';
-}
-.second-heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: darkgreen;
-    font-family: 'Lato';
 }
 
-.first-section {
-  display: flex;
-  justify-content: center;
-  align-items: stretch; /* Align items to stretch to the container height */
-  width: 100%;
-  margin-top: 5%;
-  gap: 5%;
-}
-
-.first-section .text {
-  width: 50%;
-  text-align: justify;
-  margin-left: 12%;
-  align-self: stretch; /* Stretch the text element to match container height */
-}
-
-.first-section .image {
-  width: 50%;
-}
-
-.first-section .image img {
-  width: 80%; /* Use 80% width of the container */
-  /* height: auto; Maintain aspect ratio */
-  align-self: stretch; /* Stretch the image element to match container height */
-}
-
-
-.second-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;    
-    margin-top: 5%;
-}
-
-.second-section .s-text{
-    width: 45%;
-    margin-left: 9%;
-    text-align:justify;
-}
-.second-section .s-text ul{
-    text-align:justify;
-}
-
-.s-prizes{
-    width: 26%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 7%;
-    align-items: center;
-    justify-content: center;
-    background-color: #E3FFE7;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 25px;
-    text-align: justify;
-}
-
-.s-prizes h2{
-    background-color: #036132;
-    color:white;
-    display:flex;
-    justify-content: center;
-    border-radius: 5px;
-    padding: 2%;
-    width: 100%;
-}
-
-.s-prizes table {
-  width: 50%;
-  border-collapse: collapse;
-  margin-top: 10px; /* Adjust margin as needed */
-}
-
-.s-prizes td {
-  padding: 5px;
+.oncoslice-category-box-title{
+  font-weight: 700;
+  font-size: 1.2em;
+  max-width: 80%;
+  margin: 0 auto;
   text-align: center;
 }
 
-/*  */
-
-
-span{
-    font-weight: bold;
+.oncoslice-category-box-content{
+  font-weight: 400;
+  text-align: justify;
 }
-
-.third-section .t-text{
-    margin-top: 5%;
-    margin-left: 11%;
-    width: 45%;
-    text-align: justify;
-}
-
-.second-section li{
-  margin-top: 2%;
-  
-}
-a{
-  text-decoration: underline;
-  color: #000;
-  /* text-decoration-color: #000; */
-}
-.fourth-section{
-    width: 100%;
-    margin-top: 5%;
-}
-
-.fourth-section h2{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    margin-bottom: 5%;
-    font-family: 'Lato';
-}
-.boxes {
-  display: flex;
-  justify-content: center;
-  align-items: stretch; /* Ensure children stretch to match height */
-  gap: 5%;
-  width: 100%;
-  margin:auto;
-}
-
-.box_1, .box_2 {
-  display: flex; /* Set display to flex */
-  flex-direction: column; /* Stack children vertically */
-  /* flex: 1; Make both boxes take equal height */
-  background-color: #10884C;
-  padding: 3%;
-  color: white;
-  border-radius: 15px;
-  width: 40%;
-}
-
-.text-margin {
-  /* margin-top: 5%; */
-  /* flex: 1; Make text-margin div take up equal height within box_1 and box_2 */
-  
-}
-
-/* Adjust other styles as needed */
-
-
-.text-margin h4{
-  width:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Lato';
-}
-/* .text-margin{
-    margin-top: 5%;
-} */
-/* Your existing CSS */
-
-.text-margin ul {
-  /* list-style-type: none; Remove default list styles */
-  padding-left: 20px; /* Add left padding for indentation */
-}
-
-.text-margin li {
-  margin-bottom: 5px; /* Adjust bottom margin for better spacing between items */
-}
-
-/* Your other CSS styles... */
-
-.lastline{
-    margin-top: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.register-button2 {
+.oncoslice-register-button2 {
   font-weight: 600;
   /* Adjusted font weight */
-  font-size: 1.2vw;
   /* Adjusted font size */
   line-height: 150%;
-  font-family: 'Lato';
+  font-family: Lato;
   display: flex;
   padding: 0.8vw 2vw;
   /* Adjusted padding for responsive scaling */
@@ -224,48 +73,103 @@ a{
   /* Adjusted gap for responsive scaling */
   border-radius: 50px;
   border: 1px solid #061600;
-  background: green;
+  background: #10884C;
   color: #FFF;
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px){
-    .first-section{
-        flex-direction: column;
-    }
-    .first-section .text{
-        width: 100%;
-        margin-left: 0;
-    }
-    .first-section .image{
-        width: 100%;
-    }
-    .second-section{
-        flex-direction: column;
-    }
-    .second-section .s-text{
-        width: 100%;
-        margin-left: 0;
-    }
-    .s-prizes{
-        width: 100%;
-        margin-right: 0;
-    }
-    .third-section .t-text{
-        width: 100%;
-        margin-left: 0;
-    }
-    /* .fourth-section{
-        flex-direction: column;
-    } */
-    .box_1, .box_2{
-        width: 40%;
-    }
-    .text-margin{
-        margin-top: 5%;
-        font-size: 12px;
-    }
-    /* .lastline{
-        flex-direction: column;
-    } */
+@media screen and (max-width: 1500px) {
+  .oncoslice-about{
+      flex-basis: 55%;
+  }
+  .oncoslice-body{
+      font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .oncoslice-body{
+      font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .oncoslice-categories{
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .oncoslice-about{
+      flex-basis: 100%;
+  }
+
+  .oncoslice-about-sidebar{
+      display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .oncoslice-body{
+      font-size: 0.6rem;
+  }
+}
+
+.oncoslice-process-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+}
+
+.oncoslice-process-instructions{
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5em;
+}
+
+.oncoslice-prize-card{
+  border-radius: 1rem;
+  overflow: hidden;
+  height: fit-content;
+  font-family: 'Lato', sans-serif;
+}
+
+.oncoslice-prize-card-header{
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5em;
+  background-color: #10884C;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.oncoslice-prize-card-body{
+  font-weight: 500;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #E3FFE7;
+  padding: 1rem 2rem;
+}
+
+.oncoslice-prize-card-body>div{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-weight: 600;
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .oncoslice-process-wrapper{
+      grid-template-columns: 1fr;
+  }
+}
+
+.oncoslice-outcome{
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5em;
+}
+
+.oncoslice-timeline-outerlist{
+  padding: 0;
+}
+
+.oncoslice-timeline-outerlist>li{
+  margin-bottom: 1rem;
 }

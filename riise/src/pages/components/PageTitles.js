@@ -6,7 +6,7 @@ export const MainTitle = ({ fontSize = "2em", children, style = {} }) => {
           textAlign: "center",
           margin: "1em auto",
           fontSize: fontSize,
-          //   fontFamily: "'Lato', sans-serif",
+          fontFamily: "'Lato', sans-serif",
           fontWeight: "600",
         },
         ...style,
@@ -18,7 +18,7 @@ export const MainTitle = ({ fontSize = "2em", children, style = {} }) => {
 };
 
 export const SubTitle = ({
-  color = "green",
+  color = "#036132",
   fontSize = "1.3em",
   children,
   style = {},
@@ -32,6 +32,8 @@ export const SubTitle = ({
           margin: "1em auto",
           fontSize: fontSize,
           fontStyle: "italic",
+          fontWeight: "500",
+          fontFamily: "'Lato', sans-serif",
         },
         ...style,
       }}

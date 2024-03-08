@@ -39,17 +39,17 @@ const ThemePage = () => {
             <Card
               title={"Robotics and Space Tech"}
               body="Automating crucial tasks and unlocking space explorations"
-              image={image2}
+              image={"/robonspace.png"}
               alt="India"
             />
           </Link>
           {/* <Link to="/bridgingthoeryandpractice"> */}
-            <Card
-              title={"Bridging theory and practice"}
-              body="Building and developing a strong foundation for innovation"
-              image={image3}
-              alt="India"
-            />
+          <Card
+            title={"Bridging theory and practice"}
+            body="Building and developing a strong foundation for innovation"
+            image={image3}
+            alt="India"
+          />
           {/* </Link> */}
           <Link to="/computationalgastronomy">
             <Card
@@ -76,12 +76,12 @@ const ThemePage = () => {
             />
           </Link>
           {/* <Link to="/advancemulticoresystems"> */}
-            <Card
-              title={"Advanced multicore systems"}
-              body="Building indigineous high-performance computing platforms"
-              image={image7}
-              alt="India"
-            />
+          <Card
+            title={"Advanced multicore systems"}
+            body="Building indigineous high-performance computing platforms"
+            image={image7}
+            alt="India"
+          />
           {/* </Link> */}
 
           <Link to="/bharatai">
@@ -96,7 +96,12 @@ const ThemePage = () => {
             <Card title={"CiPD"} body="Empowering innovators with intelligent product development tools" image={"/cipd.png"} alt="India" />
           </Link> */}
           <Link to="/isac">
-            <Card title={"ISAC"} body="Tackling spectral congestion for efficient next-gen networks" image={"/isac.png"} alt="India" />
+            <Card
+              title={"ISAC"}
+              body="Tackling spectral congestion for efficient next-gen networks"
+              image={"/isac.png"}
+              alt="India"
+            />
           </Link>
           <Link to="/perspectives">
             <Card
