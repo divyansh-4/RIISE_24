@@ -4,7 +4,7 @@ import image1 from "./Design for india.png";
 import image2 from "./Robotics and space technology.png";
 import image3 from "./Bridging Theory and Practice.png";
 import image4 from "./Computational Gastronomy.png";
-import image5 from "./Sustainable Mobility.png";
+import image5 from "./Sustainablemobility.png";
 import image6 from "./5G-6G.png";
 import image7 from "./Advanced Multicore System.png";
 import image8 from "./healthcare_cardn.png";
