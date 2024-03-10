@@ -7,6 +7,7 @@ import ThemePage from "./components/Themes";
 import Navbar from "./components/Navbar-home";
 import About from "./components/About";
 import Keynote from "./components/Keynote";
+import Speakers from "./components/Speakers";
 
 const App = () => {
   const footerRef = useRef();
@@ -31,8 +32,15 @@ const App = () => {
       image: "/mrjaswinder.png",
       alt: "jaswinderchadha",
     },
-    // Add more keynote speakers as needed
   ];
+  const speakerData = [
+    {
+      title: "Mr Anku Jain",
+      body: "Managing Director, MediaTek India",
+      image: "/akjain.png",
+      alt: "jaswinderchadha",
+    },
+  ]
   return (
     <div>
       <Navbar scrollToSchedule={scrollToSchedule} scrollToFooter={scrollToFooter} scrollToKeynote={scrollToKeynote}/>
@@ -40,6 +48,7 @@ const App = () => {
       <About />
       <ThemePage />
       <Keynote KeynoteRef={KeynoteRef} keynoteData={keynoteData} />
+      <Speakers speakerData={speakerData} heading="KEYNOTE SPEAKER" />
       <Schedule ScheduleRef={ScheduleRef}/>
       <Footer footerRef={footerRef} />
     </div>

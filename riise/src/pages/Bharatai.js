@@ -90,7 +90,7 @@ const Bharatai = () => {
       <Speakers
         speakerData={speakerData}
         heading="SPEAKERS"
-        countRelWidth={[3, 3, 2, 1]}
+        countRelWidth={[4, 4, 3, 1]}
       />
       <Footer footerRef={footerRef} />
     </div>

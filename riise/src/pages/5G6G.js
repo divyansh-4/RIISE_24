@@ -7,12 +7,7 @@ import Footer from "../components/Footer";
 const _5G6G = () => {
     const footerRef = useRef();
     const speakerData = [
-        {
-          title: "Mr. Bhuvnesh",
-          body: "Senior VP, HFCL",
-          image: "/bhuvnesh.png",
-          alt: "jaswinderchadha",
-        },
+        
         {
           title: "Mr. Manoj Dwivedi",
           body: " Product Development Manager, BEL",

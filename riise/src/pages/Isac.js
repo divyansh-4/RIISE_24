@@ -8,7 +8,7 @@ const Isac = () => {
     const footerRef = useRef();
     const speakerData = [
         {
-          title: " Prof. Sumit Darak",
+          title: " Prof. Sumit Darak",
           body: "Assoc. Professor and Dean of Academic Affairs,  IIIT Delhi",
           image: "/image 42.png",
             alt: "jaswinderchadha",
@@ -19,31 +19,30 @@ const Isac = () => {
         image: "/image 47.png",
         alt: "jaswinderchadha",
       },
-        // {
-        //   title: "Dr. Neelesh Mehta",
-        //   body: "Chair, ECE Department, IISc Bengaluru",
-        //   image: "/image 43.png",
-        //   alt: "jaswinderchadha",
-        // },
-        // {
-        //   title: "Dr. Swades De",
-        //   body: "Professor, Department of Electrical Engineering, IIT Delhi",
-        //   image: "/image 44.png",
-        //   alt: "jaswinderchadha",
-        // },
-        // {
-        //   title: "Dr. Aditya Jagannatham",
-        //   body: "Professor, Department of Electrical Engineering, IIT Kanpur",
-        //   image: "/image 45.png",
-        //   alt: "jaswinderchadha",
-        // },
-        // {
-        //   title: "Dr. A. Anil Kumar",
-        //   body: "Senior Scientist at Tata Consultancy Services",
-        //   image: "/image 48.png",
-        //   alt: "jaswinderchadha",
-        // },
-        // Add more keynote speakers as needed
+        {
+          title: "Dr. Neelesh Mehta",
+          body: "Chair, ECE Department, IISc Bengaluru",
+          image: "/image 43.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Dr. Swades De",
+          body: "Professor, Department of Electrical Engineering, IIT Delhi",
+          image: "/image 44.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Dr. Aditya Jagannatham",
+          body: "Professor, Department of Electrical Engineering, IIT Kanpur",
+          image: "/image 45.png",
+          alt: "jaswinderchadha",
+        },
+        {
+          title: "Dr. A. Anil Kumar",
+          body: "Senior Scientist at Tata Consultancy Services",
+          image: "/image 48.png",
+          alt: "jaswinderchadha",
+        },
       ];
 
     const scrollToFooter = () => {

@@ -95,14 +95,14 @@ const ThemePage = () => {
           {/* <Link to="/cipd">
             <Card title={"CiPD"} body="Empowering innovators with intelligent product development tools" image={"/cipd.png"} alt="India" />
           </Link> */}
-          <Link to="/isac">
+          {/* <Link to="/isac">
             <Card
               title={"ISAC"}
               body="Tackling spectral congestion for efficient next-gen networks"
               image={"/isac.png"}
               alt="India"
             />
-          </Link>
+          </Link> */}
           <Link to="/perspectives">
             <Card
               title={"Perspectives on Time, History, and Modernity"}
