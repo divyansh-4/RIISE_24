@@ -25,19 +25,25 @@ const Roboticsandspace = () => {
       title: "Tushar Jadhav",
       body: "Co-Founder at Manastu Space",
       image: "/tushar.png",
-      alt: "jaswinderchadha",
+      alt: "tushar jadhav",
+    },
+    {
+      title: "Mr. Rajiva Ranjan",
+      body: "Assistant Chief of Air Staff AVM",
+      image: "/rajivranjan.png",
+      alt: "Rajiva Ranjan",
     },
     {
       title: "Dr. Rajesh Kumar",
       body: "Robotics and AI Architect at Addverb | PhD in Robotics - IIT Delhi",
       image: "/rajeshk.png",
-      alt: "jaswinderchadha",
+      alt: "Rajesh Kumar",
     },
     {
       title: "Prof. Soumya Ranjan Sahoo",
       body: "Associate Professor, Department of Electrical Engineering, IIT Kanpur",
       image: "/saumya.png",
-      alt: "jaswinderchadha",
+      alt: "Soumya Sahoo",
     },
   ];
 
